@@ -2,26 +2,1292 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.ParentHeader{
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 16vh;
+  position: relative;
+  justify-content: center;
+}
+.ChildHeader{
+  background-color: red;
+  height: 4.5vh;
+  width: 100vw;
+  padding-left: 30vw;
+  font-weight: 650;
+  animation: 3s flick infinite;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.2px white;
+}
+@keyframes flick{
+  0%{
+    color: gold;
+  }
+  20%{
+    color: blue;
+  }
+  40%{
+    color: blueviolet;
+  }
+  60%{
+    color:yellow;
+  }
+  80%{
+    color: darkcyan;
+    ;
+  }
+  100%{
+    color: #8a2be2;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.ChildHeader span{
+  color: #007bff; 
+  text-shadow: 
+    0 0 5px #007bff, 
+    0 0 5px #007bff;
+  -webkit-text-stroke: 0.5px white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.Headercontent input{
+  background-color: white;
+  width: 36vw;
+  color: black;
+  padding-left: 2vw;
+  height: 7vh;
+  position: absolute;
+  margin-top: 6.5vh;
+  margin-left: -70vw;
+}
+.Headercontent .searchicon{
+  color: black;
+  background-color: orangered;
+  width: 5vw;
+  height: 7vh;
+  margin-top: 6.5vh;
+  margin-left: -34vw;
+}
+
+.Headercontent h1{
+  color: orangered;
+  margin-top: -9.7vh;
+  font-size: 4vw;
+  width: 20vw;
+  position: absolute;
+  height: 13vh;
+  font-family: fantasy;
+  margin-left: -95vw;
+}
+.Headercontent span{
+   font-size: 1vw;
+   font-family: monospace;
+}
+.Headercontent .carticon{
+  margin-left: -20vw;
+  font-size: 3vw;
+  margin-top: -10vh;
+  position: absolute;
+  color: white;
+}
+
+.Headercontent .mailicon{
+  margin-left: -15vw;
+  font-size: 3vw;
+  margin-top: -6vh;
+  position: absolute;
+  color: red;
+}
+
+.Headercontent .whatsappicon{
+  margin-left: -10vw;
+  font-size: 3vw;
+  position: absolute;
+  margin-top: -6.8vh;
+  color: greenyellow;
+}
+
+
+.Parentbanner{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.Parentbanner .Childbanner{
+  height: 4vh;
+  width: 47%;
+  display: flex;
+  gap: 3vw;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 1vh;
+  margin-left: -2vw;
+}
+.Childbanner .home:hover{
+  transition: 1s ease;
+  transform: translateY(-5px);
+  color: red;
+}
+
+
+.Childbanner .sales:hover{
+  transition: 1s ease;
+  transform: translateY(-5px);
+  color: red;
+}
+
+
+.Childbanner .products:hover{
+  transition: 1s ease;
+  transform: translateY(-5px);
+  color: red;
+}
+
+.Childbanner .services:hover{
+  transition: 1s ease;
+  transform: translateY(-5px);
+  color: red;
+}
+
+
+.Childbanner .about:hover{
+  transition: 1s ease;
+  transform: translateY(-5px);
+  color: red;
+}
+
+
+
+.Childbanner .contact:hover{
+  transition: 1s ease;
+  transform: translateY(-5px);
+  color: red;
+}
+
+
+.Parentbanner .posters{
+  margin-top: 6vh;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.posters .bigbanner{
+  width: 95vw;
+  border-radius: 2vw;
+  margin-left: 1.8vw;
+  height:100vh;
+  filter: blur(2px);
+  filter: contrast(150%);
+}
+
+
+.Parentbanner2{
+  display: flex;
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  margin-top: -20vh;
+  flex-wrap: wrap;
+}
+
+.Parentbanner2 .textbox1{
+  margin-left: -70vw;
+  background-color: black;
+  margin-top: -8vh;
+  position: absolute;
+  width: 20vw;
+  color: white;
+  padding-top: 1vh;
+  border-radius: 0.5vw;
+  padding-left: 0.8vw;
+  font-size: 1vw;
+  height: 5vh;
+  font-weight: 600;
+}
+.textbox1 .box1{
+  padding: 10px;
+  width: 20vw;
+  border-radius: 0.5vw;
+  margin-left: -0.8vw;
+  background-color: black;
+}
+
+.Parentbanner2 .textbox2{
+  margin-left: -23.5vw;
+  background-color: black;
+  margin-top: -8vh;
+  position: absolute;
+  width: 20vw;
+  color: white;
+  padding-top: 1vh;
+  border-radius: 0.5vw;
+  padding-left: 0.8vw;
+  font-size: 1vw;
+  height: 5vh;
+  font-weight: 600;
+}
+.textbox2 .box2{
+  padding: 10px;
+  width: 20vw;
+  border-radius: 0.5vw;
+  margin-left: -0.8vw;
+  background-color: black;
+}
+
+.Parentbanner2 .textbox3{
+  margin-left: 23.5vw;
+  background-color: black;
+  margin-top: -8vh;
+  position: absolute;
+  width: 20vw;
+  color: white;
+  padding-top: 1vh;
+  border-radius: 0.5vw;
+  padding-left: 0.8vw;
+  font-size: 1vw;
+  height: 5vh;
+  font-weight: 600;
+}
+.textbox3 .box3{
+  padding: 10px;
+  width: 20vw;
+  border-radius: 0.5vw;
+  margin-left: -0.8vw;
+  background-color: black;
+}
+
+.Parentbanner2 .textbox4{
+  margin-left: 69.5vw;
+  background-color: black;
+  margin-top: -8vh;
+  position: absolute;
+  width: 20vw;
+  color: white;
+  padding-top: 1vh;
+  border-radius: 0.5vw;
+  padding-left: 0.8vw;
+  font-size: 1vw;
+  height: 5vh;
+  font-weight: 600;
+}
+.textbox4 .box4{
+  padding: 10px;
+  width: 20vw;
+  border-radius: 0.5vw;
+  margin-left: -0.8vw;
+  background-color: black;
+}
+.Parentitems{
+  display: flex;
+  background-color:  rgba(#1B1931, #44174E, #662249, #A34054, #ED9E59, #E9BCB9);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.Childitem1{
+  width: 200px;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+margin: 20px;
+transition: 1s ease;
+}
+.Childitem1:hover{
+transform:scale(1.15);
+}
+.Childitem1 .img1{
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  cursor: context-menu;
+}
+.card1content{
+  padding: 5px;
+  cursor: context-menu;
+}
+.card1content p{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.card1content .btn{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 5px 5px 5px 5px;
+  transition: 0.5s ease;
+}
+.card1content .btn:hover{
+  background-color: red;
+}
+
+.card1content h1{
+  font-size: 25px;
+  color: rgb(255, 102, 0);
+}
+.card1content span{
+  font-size: 13px;
+  text-decoration: line-through;
+  color:  gray;
+}
+
+.Parenthead{
+  position: relative;
+  width: 100%;
+  height: 31vh;
+  display: flex;
+}
+.Childhead{
+  width: 100%;
+  height: 53vh;
+}
+
+.Childhead h1{
+  margin-top: 8vh;
+  font-size: 3vw;
+  margin-left: 4vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead p{
+  margin-top: -8vh;
+  border-bottom: 2px solid black;
+  background-color:  rgb(224, 223, 223);
+  color: orangered;
+  font-size:3vw;
+  width: 100%;
+  padding-left:4vw ;
+  font-weight: 560;
+  -webkit-text-stroke: 2px #000;
+  animation: saleAnimation 3s infinite ease-in-out;
+  text-shadow: 
+    0 0 5px #ff0000, 
+    0 0 10px #ff7300, 
+    0 0 20px #ffeb00;
+}
+
+@keyframes saleAnimation {
+  0% {
+    color: #ff0000;
+    -webkit-text-stroke: 2px #000;
+    text-shadow: 
+      0 0 5px #ff0000, 
+      0 0 10px #ff7300, 
+      0 0 20px #ffeb00;
   }
+  25% {
+    color: #ff7300;
+    -webkit-text-stroke: 2px #ff0000;
+    text-shadow: 
+      0 0 5px #ff7300, 
+      0 0 15px #ffeb00, 
+      0 0 30px #00ff00;
+  }
+  50% {
+    color: #ffeb00;
+    -webkit-text-stroke: 2px #ff7300;
+    text-shadow: 
+      0 0 5px #ffeb00, 
+      0 0 20px #00ff00, 
+      0 0 40px #007bff;
+  }
+  75% {
+    color: #00ff00;
+    -webkit-text-stroke: 2px #ffeb00;
+    text-shadow: 
+      0 0 5px #00ff00, 
+      0 0 25px #007bff, 
+      0 0 50px #8a2be2;
+  }
+  100% {
+    color: #007bff;
+    -webkit-text-stroke: 2px #00ff00;
+    text-shadow: 
+      0 0 5px #007bff, 
+      0 0 30px #8a2be2, 
+      0 0 60px #ff0000;
+  }
+}
+.Childhead button{
+color: red;
+margin-top: 7vh;
+margin-left: 83.5vw;
+border: 2px solid orangered;
+padding: 5px 5px 5px 5px;
+}
+
+
+@media (max-width:480px){
+  .ChildHeader h1{
+    font-size: 2vw;
+    margin-left: -16vw;
+    margin-top: 0.5vh;
+  }
+  .Headercontent h1{
+    font-size: 40px;
+    width: 30vw;
+    margin-left: -95vw;
+    margin-top: -45px;
+  }
+  .Headercontent span{
+    font-size: 1.5vw;
+    margin-left: -1vw;    
+  }
+  .ChildHeader{
+    height: 20px;
+  }
+  .ParentHeader{
+    height: 82px;
+  }
+  
+.Headercontent input{
+  background-color: white;
+  width: 36vw;
+  color: black;
+  padding-left: 2vw;
+  height: 35px;
+  font-size: 2vw;
+  position: absolute;
+  margin-top: 33px;
+  margin-left: -70vw;
+}
+
+.Headercontent .searchicon{
+  color: black;
+  background-color: orangered;
+  width: 5vw;
+  height: 35px;
+  margin-top: 33px;
+  margin-left: -34vw;
+}
+.Headercontent .carticon{
+  margin-left: -25vw;
+  font-size: 4vw;
+  margin-top: -25px;
+}
+
+.Headercontent .mailicon{
+  margin-left: -20vw;
+  font-size: 5vw;
+  margin-top: -27px;
+}
+
+.Headercontent .whatsappicon{
+  margin-left: -15vw;
+  font-size: 5vw;
+  margin-top: -27px;
+}
+
+
+.Parentbanner .Childbanner{
+  height: 20px;
+  width: 60%;
+  font-size: 1.8vw;
+display: none;
+  margin-top: 8px;
+}
+
+.posters .bigbanner{
+  width: 95vw;
+  margin-left: 1.8vw;
+  height:380px;
+}
+.Parentbanner{
+  width: 100%;
+  height: 500px;
+  margin-top: -20px;
+  position: relative;  
+}
+
+.Parentbanner2{
+  height: 110px;
+  margin-top: -160px;
+}
+.Parentbanner2 .textbox1{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox2{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox3{
+margin-top: 1px;
+}
+.Parentbanner2 .textbox4{
+  margin-top: 1px;
+}
+.Parentbanner2 .box1{
+  margin-left: -1vw;
+  height: 150px;
+}
+.Parentbanner2 .box1 .box1img{
+  height: 130px;
+}
+
+.Parentbanner2 .box2{
+  height: 150px;
+  
+}
+.Parentbanner2 .box2 .box2img{
+  height: 130px;
+}
+
+.Parentbanner2 .box3{
+  height: 150px;
+  
+}
+.Parentbanner2 .box3 .box3img{
+  height: 130px;
+}
+
+.Parentbanner2 .box4{
+  height: 150px;
+  
+}
+.Parentbanner2 .box4 .box4img{
+  height: 130px;
+}
+
+.Parenthead{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.Childhead{
+  width: 100%;
+  height: 41%;
+}
+
+.Childhead h1{
+  margin-top: 150px;
+  font-size: 30px;
+  margin-left: 6vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead p{
+  margin-top: -43.5px;
+  font-size: 20px;
+  height: 52px;
+  width: 100%;
+  padding-top: 11px;
+  padding-left:14px ;
+  font-weight: 560;
+
+}
+
+.Childhead button{
+color: red;
+font-size: 3vw;
+margin-top: 105px;
+margin-left: 69.5vw;
+border: 2px solid orangered;
+padding: 5px 5px 5px 5px;
+}
+
+
+}
+
+
+@media (min-width:481px) and (max-width:768px){
+  .ChildHeader h1{
+    font-size: 1.6vw;
+    margin-left: -9vw;
+    margin-top: 3px;
+  }
+  .Headercontent h1{
+    font-size: 40px;
+    width: 30vw;
+    margin-left: -95vw;
+    margin-top: -45px;
+  }
+  .Headercontent span{
+    font-size: 1.5vw;
+    margin-left: -1vw;    
+  }
+  .ChildHeader{
+    height: 25px;
+  }
+  .ParentHeader{
+    height: 82px;
+  }
+  
+.Headercontent input{
+  background-color: white;
+  width: 36vw;
+  color: black;
+  padding-left: 2vw;
+  height: 35px;
+  font-size: 2vw;
+  position: absolute;
+  margin-top: 36px;
+  margin-left: -70vw;
+}
+
+.Headercontent .searchicon{
+  color: black;
+  background-color: orangered;
+  width: 5vw;
+  height: 35px;
+  margin-top: 36px;
+  margin-left: -34vw;
+}
+.Headercontent .carticon{
+  margin-left: -25vw;
+  font-size: 20px;
+  width: 5vw;
+  margin-top: -27px;
+}
+
+.Headercontent .mailicon{
+  margin-left: -18.5vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+
+.Headercontent .whatsappicon{
+  margin-left: -12vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+
+
+.Parentbanner .Childbanner{
+  height: 20px;
+  width: 60%;
+  font-size: 1.8vw;
+display: none;
+  margin-top: 8px;
+}
+
+.posters .bigbanner{
+  width: 95vw;
+  margin-left: 1.8vw;
+  height:380px;
+}
+.Parentbanner{
+  width: 95%;
+  height: 500px;
+  margin-left: 0.8vw;
+  margin-top: -20px;
+  position: relative;  
+}
+
+.Parentbanner2{
+  height: 110px;
+  margin-top: -160px;
+}
+.Parentbanner2 .textbox1{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox2{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox3{
+margin-top: 1px;
+}
+.Parentbanner2 .textbox4{
+  margin-top: 1px;
+}
+.Parentbanner2 .box1{
+  height: 150px;
+}
+.Parentbanner2 .box1 .box1img{
+  height: 130px;
+}
+
+.Parentbanner2 .box2{
+  height: 150px;
+  
+}
+.Parentbanner2 .box2 .box2img{
+  height: 130px;
+}
+
+.Parentbanner2 .box3{
+  height: 150px;
+  
+}
+.Parentbanner2 .box3 .box3img{
+  height: 130px;
+}
+
+.Parentbanner2 .box4{
+  height: 150px;
+  
+}
+.Parentbanner2 .box4 .box4img{
+  height: 130px;
+}
+
+.Parenthead{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.Childhead{
+  width: 100%;
+  height: 41%;
+}
+
+.Childhead h1{
+  margin-top: 150px;
+  font-size: 30px;
+  margin-left: 6vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead p{
+  margin-top: -43.5px;
+  font-size: 20px;
+  height: 52px;
+  width: 100%;
+  padding-top: 11px;
+  padding-left:40px ;
+  font-weight: 560;
+
+}
+
+.Childhead button{
+color: red;
+font-size: 2vw;
+margin-top: 105px;
+margin-left: 76.5vw;
+border: 2px solid orangered;
+padding: 5px 5px 5px 5px;
+}
+
+}
+@media (min-width:769px) and (max-width:1024px){
+  .ChildHeader h1{
+    font-size: 1.6vw;
+    margin-left: -10vw;
+    margin-top: 5px;
+  }
+  .Headercontent h1{
+    font-size: 40px;
+    width: 30vw;
+    margin-left: -95vw;
+    margin-top: -45px;
+  }
+  .Headercontent span{
+    font-size: 1.5vw;
+    margin-left: -1vw;    
+  }
+  .ChildHeader{
+    height: 35px;
+  }
+  .ParentHeader{
+    height: 102px;
+  }
+  
+.Headercontent input{
+  background-color: white;
+  width: 36vw;
+  color: black;
+  padding-left: 2vw;
+  height: 35px;
+  font-size: 2vw;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -70vw;
+}
+
+.Headercontent .searchicon{
+  color: black;
+  background-color: orangered;
+  width: 5vw;
+  height: 35px;
+  margin-top: 50px;
+  margin-left: -34vw;
+}
+.Headercontent .carticon{
+  margin-left: -25vw;
+  font-size: 20px;
+  width: 5vw;
+  margin-top: -27px;
+}
+
+.Headercontent .mailicon{
+  margin-left: -18.5vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+
+.Headercontent .whatsappicon{
+  margin-left: -12vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}.Parentbanner .Childbanner{
+  height: 20px;
+  width: 70%;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  margin-left: 4.5vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-top: 550px;
+}
+
+.posters .bigbanner{
+  width: 95vw;
+  margin-left: 1.8vw;
+  height:380px;
+}
+.Parentbanner{
+  width: 95%;
+  height: 500px;
+  margin-left: 0.8vw;
+  margin-top: -30px;
+  position: relative;  
+}
+
+.Parentbanner2{
+  height: 180px;
+  margin-top: -160px;
+}
+.Parentbanner2 .textbox1{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox2{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox3{
+margin-top: 1px;
+}
+.Parentbanner2 .textbox4{
+  margin-top: 1px;
+}
+.Parentbanner2 .box1{
+  height: 150px;
+}
+.Parentbanner2 .box1 .box1img{
+  height: 130px;
+}
+
+.Parentbanner2 .box2{
+  height: 150px;
+  
+}
+.Parentbanner2 .box2 .box2img{
+  height: 130px;
+}
+
+.Parentbanner2 .box3{
+  height: 150px;
+  
+}
+.Parentbanner2 .box3 .box3img{
+  height: 130px;
+}
+
+.Parentbanner2 .box4{
+  height: 150px;
+  
+}
+.Parentbanner2 .box4 .box4img{
+  height: 130px;
+}
+
+.Parenthead{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.Childhead{
+  width: 100%;
+  height: 41%;
+}
+
+.Childhead h1{
+  margin-top: 90px;
+  font-size: 30px;
+  margin-left: 6vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead p{
+  margin-top: -60.5px;
+  font-size: 35px;
+  height: 82px;
+  width: 100%;
+  padding-top: 12px;
+  padding-left:40px ;
+  font-weight: 560;
+
+}
+
+.Childhead button{
+color: red;
+font-size: 2vw;
+margin-top: 120px;
+margin-left: 76.5vw;
+border: 2px solid orangered;
+padding: 5px 5px 5px 5px;
+}
+
+}
+@media (min-width:1025px) and (max-width:1440px){
+  .ChildHeader h1{
+    font-size: 1.6vw;
+    margin-left: -9vw;
+    margin-top: 8px;
+  }
+  .Headercontent h1{
+    font-size: 40px;
+    width: 30vw;
+    margin-left: -97vw;
+    margin-top: -45px;
+  }
+  .Headercontent span{
+    font-size: 1.5vw;
+    margin-left: 0vw;    
+  }
+  .ChildHeader{
+    height: 50px;
+  }
+  .ParentHeader{
+    height: 132px;
+  }
+  
+.Headercontent input{
+  background-color: white;
+  width: 42vw;
+  color: black;
+  padding-left: 2vw;
+  height: 35px;
+  font-size: 1.4vw;
+  position: absolute;
+  margin-top: 73px;
+  margin-left: -74vw;
+}
+
+.Headercontent .searchicon{
+  color: black;
+  background-color: orangered;
+  width: 5vw;
+  height: 35px;
+  margin-top: 73px;
+  margin-left: -32vw;
+}
+.Headercontent .carticon{
+  margin-left: -25vw;
+  font-size: 20px;
+  width: 5vw;
+  margin-top: -27px;
+}
+
+.Headercontent .mailicon{
+  margin-left: -18.5vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+
+.Headercontent .whatsappicon{
+  margin-left: -12vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+.Parentbanner .Childbanner{
+  height: 20px;
+  width: 70%;
+  z-index: 100;
+  justify-content: center;
+  margin-left: 3vw;
+  font-size: 1.5vw;
+  display: none;
+  font-weight: 600;
+  margin-top: 550px;
+}
+
+.posters .bigbanner{
+  width: 95vw;
+  margin-left: 1.8vw;
+  height:380px;
+}
+.Parentbanner{
+  width: 95%;
+  height: 500px;
+  margin-left: 0.8vw;
+  margin-top: -30px;
+  position: relative;  
+}
+
+.Parentbanner2{
+  height: 180px;
+  margin-top: -160px;
+}
+.Parentbanner2 .textbox1{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox2{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox3{
+margin-top: 1px;
+}
+.Parentbanner2 .textbox4{
+  margin-top: 1px;
+}
+.Parentbanner2 .box1{
+  height: 150px;
+}
+.Parentbanner2 .box1 .box1img{
+  height: 130px;
+}
+
+.Parentbanner2 .box2{
+  height: 150px;
+  
+}
+.Parentbanner2 .box2 .box2img{
+  height: 130px;
+}
+
+.Parentbanner2 .box3{
+  height: 150px;
+  
+}
+.Parentbanner2 .box3 .box3img{
+  height: 130px;
+}
+
+.Parentbanner2 .box4{
+  height: 150px;
+  
+}
+.Parentbanner2 .box4 .box4img{
+  height: 130px;
+}
+
+.Parenthead{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.Childhead{
+  width: 100%;
+  height: 41%;
+}
+
+.Childhead h1{
+  margin-top: 90px;
+  font-size: 30px;
+  margin-left: 4vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead p{
+  margin-top: -67.5px;
+  font-size: 35px;
+  height: 82px;
+  width: 100%;
+  padding-top: 12px;
+  padding-left:50px ;
+  font-weight: 560;
+
+}
+
+.Childhead button{
+color: red;
+font-size: 2vw;
+margin-top: 100px;
+margin-left: 78vw;
+border: 2px solid orangered;
+padding: 5px 5px 5px 5px;
+}
+
+}
+@media (min-width:1441px){
+  .ChildHeader h1{
+    font-size: 1.6vw;
+    margin-left: -9vw;
+    margin-top: 8px;
+  }
+  .Headercontent h1{
+    font-size: 40px;
+    width: 30vw;
+    margin-left: -97vw;
+    margin-top: -45px;
+  }
+  .Headercontent span{
+    font-size: 1.5vw;
+    margin-left: 0vw;    
+  }
+  .ChildHeader{
+    height: 50px;
+  }
+  .ParentHeader{
+    height: 132px;
+  }
+  
+.Headercontent input{
+  background-color: white;
+  width: 42vw;
+  color: black;
+  padding-left: 2vw;
+  height: 35px;
+  font-size: 1.4vw;
+  position: absolute;
+  margin-top: 73px;
+  margin-left: -74vw;
+}
+
+.Headercontent .searchicon{
+  color: black;
+  background-color: orangered;
+  width: 5vw;
+  height: 35px;
+  margin-top: 73px;
+  margin-left: -32vw;
+}
+.Headercontent .carticon{
+  margin-left: -25vw;
+  font-size: 20px;
+  width: 5vw;
+  margin-top: -27px;
+}
+
+.Headercontent .mailicon{
+  margin-left: -18.5vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+
+.Headercontent .whatsappicon{
+  margin-left: -12vw;
+  font-size: 30px;
+  width: 5vw;
+  margin-top: -31px;
+}
+
+.Parentbanner .Childbanner{
+  height: 20px;
+  width: 70%;
+  z-index: 100;
+  justify-content: center;
+  margin-left: 4.5vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-top: 550px;
+}
+
+.posters .bigbanner{
+  width: 95vw;
+  margin-left: 1.8vw;
+  height:380px;
+}
+.Parentbanner{
+  width: 95%;
+  height: 500px;
+  margin-left: 0.8vw;
+  margin-top: -30px;
+  position: relative;  
+}
+
+.Parentbanner2{
+  height: 180px;
+  margin-top: -160px;
+}
+.Parentbanner2 .textbox1{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox2{
+  margin-top: 1px;
+}
+.Parentbanner2 .textbox3{
+margin-top: 1px;
+}
+.Parentbanner2 .textbox4{
+  margin-top: 1px;
+}
+.Parentbanner2 .box1{
+  height: 150px;
+}
+.Parentbanner2 .box1 .box1img{
+  height: 130px;
+}
+
+.Parentbanner2 .box2{
+  height: 150px;
+  
+}
+.Parentbanner2 .box2 .box2img{
+  height: 130px;
+}
+
+.Parentbanner2 .box3{
+  height: 150px;
+  
+}
+.Parentbanner2 .box3 .box3img{
+  height: 130px;
+}
+
+.Parentbanner2 .box4{
+  height: 150px;
+  
+}
+.Parentbanner2 .box4 .box4img{
+  height: 130px;
+}
+
+.Parenthead{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.Childhead{
+  width: 100%;
+  height: 41%;
+}
+
+.Childhead h1{
+  margin-top: 90px;
+  font-size: 30px;
+  margin-left: 4vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead p{
+  margin-top: -67.5px;
+  font-size: 35px;
+  height: 82px;
+  width: 100%;
+  padding-top: 12px;
+  padding-left:50px ;
+  font-weight: 560;
+
+}
+
+.Childhead button{
+color: red;
+font-size: 2vw;
+margin-top: 100px;
+margin-left: 78vw;
+border: 2px solid orangered;
+padding: 5px 5px 5px 5px;
+}
+
 }
