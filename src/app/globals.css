@@ -174,7 +174,7 @@
 
 
 .Parentbanner .posters{
-  margin-top: 6vh;
+  margin-top: 30px;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -348,20 +348,16 @@ transform:scale(1.15);
 .Parenthead{
   position: relative;
   width: 100%;
+  justify-content: center;
   height: 31vh;
   display: flex;
 }
 .Childhead{
   width: 100%;
   height: 53vh;
+  justify-content: center;
 }
 
-.Childhead h1{
-  margin-top: 8vh;
-  font-size: 3vw;
-  margin-left: 4vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 .Childhead p{
   margin-top: -8vh;
   border-bottom: 2px solid black;
@@ -380,7 +376,36 @@ margin-left: 83.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
+.Parentdown{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  justify-content: center;
+}
+.Childdown{
+  width: 590px;
+overflow: hidden;
+margin: 20px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+transition: 1s ease;
+}
+.Childdown .video{
+  width: 100%;
+  filter: blur(1px);
+  height: 100%; 
+  cursor: context-menu;
+}
 
+.Childhead h1{
+  margin-top: 8vh;
+  font-size: 3vw;
+  margin-left: 40vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead h3{
+  font-size: 1.3vw;
+  margin-left: 40vw;
+}
 @media (max-width:480px){
   .ChildHeader h1{
     font-size: 2vw;
@@ -410,7 +435,7 @@ padding: 5px 5px 5px 5px;
   color: black;
   padding-left: 2vw;
   height: 35px;
-  font-size: 2vw;
+  font-size: 8px;
   position: absolute;
   margin-top: 33px;
   margin-left: -70vw;
@@ -455,10 +480,13 @@ display: none;
   width: 95vw;
   margin-left: 2.4vw;
   height:380px;
+  margin-top: -5px;
+  
 }
 .Parentbanner{
   width: 100%;
   height: 500px;
+  display: flex;
   margin-top: -20px;
   position: relative;  
 }
@@ -522,58 +550,7 @@ margin-top: 1px;
   height: 41%;
 }
 
-.Childhead h1{
-  margin-top: 120px;
-  font-size: 20px;
-  width: 190px;
-  border: 2px solid red;
-  margin-left: 3vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  animation: 3s saleAnimation infinite alternate;
-}
 
-@keyframes saleAnimation {
-  0% {
-    color: #ff0000;
-    -webkit-text-stroke: 2px #000;
-    text-shadow: 
-      0 0 5px #ff0000, 
-      0 0 10px #ff7300, 
-      0 0 20px #ffeb00;
-  }
-  25% {
-    color: #ff7300;
-    -webkit-text-stroke: 2px #ff0000;
-    text-shadow: 
-      0 0 5px #ff7300, 
-      0 0 15px #ffeb00, 
-      0 0 30px #00ff00;
-  }
-  50% {
-    color: #ffeb00;
-    -webkit-text-stroke: 2px #ff7300;
-    text-shadow: 
-      0 0 5px #ffeb00, 
-      0 0 20px #00ff00, 
-      0 0 40px #007bff;
-  }
-  75% {
-    color: #00ff00;
-    -webkit-text-stroke: 2px #ffeb00;
-    text-shadow: 
-      0 0 5px #00ff00, 
-      0 0 25px #007bff, 
-      0 0 50px #8a2be2;
-  }
-  100% {
-    color: #007bff;
-    -webkit-text-stroke: 2px #00ff00;
-    text-shadow: 
-      0 0 5px #007bff, 
-      0 0 30px #8a2be2, 
-      0 0 60px #ff0000;
-  }
-}
 .Childhead p{
   margin-top: -43.5px;
   font-size: 20px;
@@ -588,15 +565,25 @@ margin-top: 1px;
 .Childhead button{
 color: red;
 font-size: 3vw;
-margin-top: 85px;
+margin-top: 55px;
 margin-left: 69.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
 
+.Childhead h1{
+  margin-top: 85px;
+  font-size: 7vw;
+  margin-left: 34vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead h3{
+  font-size: 2.5vw;
+  margin-left: 31.5vw;
 }
 
+}
 
 @media (min-width:481px) and (max-width:768px){
   .ChildHeader h1{
@@ -742,59 +729,6 @@ margin-top: 1px;
   height: 41%;
 }
 
-
-.Childhead h1{
-  margin-top: 150px;
-  font-size: 30px;
-  width: 280px;
-  border: 2px solid red;
-  margin-left: 5vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  animation: 3s saleAnimation infinite alternate;
-}
-
-@keyframes saleAnimation {
-  0% {
-    color: #ff0000;
-    -webkit-text-stroke: 2px #000;
-    text-shadow: 
-      0 0 5px #ff0000, 
-      0 0 10px #ff7300, 
-      0 0 20px #ffeb00;
-  }
-  25% {
-    color: #ff7300;
-    -webkit-text-stroke: 2px #ff0000;
-    text-shadow: 
-      0 0 5px #ff7300, 
-      0 0 15px #ffeb00, 
-      0 0 30px #00ff00;
-  }
-  50% {
-    color: #ffeb00;
-    -webkit-text-stroke: 2px #ff7300;
-    text-shadow: 
-      0 0 5px #ffeb00, 
-      0 0 20px #00ff00, 
-      0 0 40px #007bff;
-  }
-  75% {
-    color: #00ff00;
-    -webkit-text-stroke: 2px #ffeb00;
-    text-shadow: 
-      0 0 5px #00ff00, 
-      0 0 25px #007bff, 
-      0 0 50px #8a2be2;
-  }
-  100% {
-    color: #007bff;
-    -webkit-text-stroke: 2px #00ff00;
-    text-shadow: 
-      0 0 5px #007bff, 
-      0 0 30px #8a2be2, 
-      0 0 60px #ff0000;
-  }
-}
 .Childhead p{
   margin-top: -43.5px;
   font-size: 20px;
@@ -809,12 +743,22 @@ margin-top: 1px;
 .Childhead button{
 color: red;
 font-size: 2vw;
-margin-top: 105px;
+margin-top: 70px;
 margin-left: 76.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
+.Childhead h1{
+  margin-top: 95px;
+  font-size: 7vw;
+  margin-left: 34vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead h3{
+  margin-left: 31.5vw;
+  font-size: 2.5vw;
+}
 }
 @media (min-width:769px) and (max-width:1024px){
   .ChildHeader h1{
@@ -954,65 +898,12 @@ margin-top: 1px;
   position: relative;
   width: 100%;
   height: 50%;
-  display: flex;
 }
 .Childhead{
   width: 100%;
   height: 41%;
 }
 
-.Childhead h1{
-  margin-top: 100px;
-  font-size: 30px;
-  width: 280px;
-  border: 2px solid red;
-  margin-left: 5vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  animation: 3s saleAnimation infinite alternate;
-}
-
-@keyframes saleAnimation {
-  0% {
-    color: #ff0000;
-    -webkit-text-stroke: 2px #000;
-    text-shadow: 
-      0 0 5px #ff0000, 
-      0 0 10px #ff7300, 
-      0 0 20px #ffeb00;
-  }
-  25% {
-    color: #ff7300;
-    -webkit-text-stroke: 2px #ff0000;
-    text-shadow: 
-      0 0 5px #ff7300, 
-      0 0 15px #ffeb00, 
-      0 0 30px #00ff00;
-  }
-  50% {
-    color: #ffeb00;
-    -webkit-text-stroke: 2px #ff7300;
-    text-shadow: 
-      0 0 5px #ffeb00, 
-      0 0 20px #00ff00, 
-      0 0 40px #007bff;
-  }
-  75% {
-    color: #00ff00;
-    -webkit-text-stroke: 2px #ffeb00;
-    text-shadow: 
-      0 0 5px #00ff00, 
-      0 0 25px #007bff, 
-      0 0 50px #8a2be2;
-  }
-  100% {
-    color: #007bff;
-    -webkit-text-stroke: 2px #00ff00;
-    text-shadow: 
-      0 0 5px #007bff, 
-      0 0 30px #8a2be2, 
-      0 0 60px #ff0000;
-  }
-}
 .Childhead p{
   margin-top: -60.5px;
   font-size: 35px;
@@ -1033,6 +924,18 @@ border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
+.Childhead h1{
+  margin-top: 85px;
+  font-size: 5vw;
+  width: 24.7%;
+  margin-left: 38vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead h3{
+  margin-left: 38vw;
+  font-size: 1.5vw;
+  width: 25%;
+}
 }
 @media (min-width:1025px) and (max-width:1440px){
   .ChildHeader h1{
@@ -1179,59 +1082,6 @@ margin-top: 1px;
   width: 100%;
   height: 41%;
 }
-
-.Childhead h1{
-  margin-top: 90px;
-  font-size: 50px;
-  width: auto;
-  border: 2px solid red;
-  justify-self: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  animation: 3s saleAnimation infinite alternate;
-}
-
-@keyframes saleAnimation {
-  0% {
-    color: #ff0000;
-    -webkit-text-stroke: 2px #000;
-    text-shadow: 
-      0 0 5px #ff0000, 
-      0 0 10px #ff7300, 
-      0 0 20px #ffeb00;
-  }
-  25% {
-    color: #ff7300;
-    -webkit-text-stroke: 2px #ff0000;
-    text-shadow: 
-      0 0 5px #ff7300, 
-      0 0 15px #ffeb00, 
-      0 0 30px #00ff00;
-  }
-  50% {
-    color: #ffeb00;
-    -webkit-text-stroke: 2px #ff7300;
-    text-shadow: 
-      0 0 5px #ffeb00, 
-      0 0 20px #00ff00, 
-      0 0 40px #007bff;
-  }
-  75% {
-    color: #00ff00;
-    -webkit-text-stroke: 2px #ffeb00;
-    text-shadow: 
-      0 0 5px #00ff00, 
-      0 0 25px #007bff, 
-      0 0 50px #8a2be2;
-  }
-  100% {
-    color: #007bff;
-    -webkit-text-stroke: 2px #00ff00;
-    text-shadow: 
-      0 0 5px #007bff, 
-      0 0 30px #8a2be2, 
-      0 0 60px #ff0000;
-  }
-}
 .Childhead p{
   margin-top: -67.5px;
   font-size: 35px;
@@ -1251,6 +1101,18 @@ border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
+.Childhead h1{
+  margin-top: 85px;
+  font-size: 5vw;
+  width: 24.8vw;
+  margin-left: 37vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead h3{
+  font-size: 1.5vw;
+  width: 25vw;
+  margin-left: 37vw;
+}
 }
 @media (min-width:1441px){
   .ChildHeader h1{
@@ -1322,6 +1184,7 @@ padding: 5px 5px 5px 5px;
   z-index: 100;
   justify-content: center;
   margin-left: 4.5vw;
+  display: none;
   font-size: 1.5vw;
   font-weight: 600;
   margin-top: 550px;
@@ -1397,58 +1260,6 @@ margin-top: 1px;
   width: 100%;
   height: 41%;
 }
-.Childhead h1{
-  margin-top: 90px;
-  font-size: 50px;
-  width: auto;
-  border: 2px solid red;
-  justify-self: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  animation: 3s saleAnimation infinite alternate;
-}
-
-@keyframes saleAnimation {
-  0% {
-    color: #ff0000;
-    -webkit-text-stroke: 2px #000;
-    text-shadow: 
-      0 0 5px #ff0000, 
-      0 0 10px #ff7300, 
-      0 0 20px #ffeb00;
-  }
-  25% {
-    color: #ff7300;
-    -webkit-text-stroke: 2px #ff0000;
-    text-shadow: 
-      0 0 5px #ff7300, 
-      0 0 15px #ffeb00, 
-      0 0 30px #00ff00;
-  }
-  50% {
-    color: #ffeb00;
-    -webkit-text-stroke: 2px #ff7300;
-    text-shadow: 
-      0 0 5px #ffeb00, 
-      0 0 20px #00ff00, 
-      0 0 40px #007bff;
-  }
-  75% {
-    color: #00ff00;
-    -webkit-text-stroke: 2px #ffeb00;
-    text-shadow: 
-      0 0 5px #00ff00, 
-      0 0 25px #007bff, 
-      0 0 50px #8a2be2;
-  }
-  100% {
-    color: #007bff;
-    -webkit-text-stroke: 2px #00ff00;
-    text-shadow: 
-      0 0 5px #007bff, 
-      0 0 30px #8a2be2, 
-      0 0 60px #ff0000;
-  }
-}
 .Childhead p{
   margin-top: -67.5px;
   font-size: 35px;
@@ -1469,4 +1280,16 @@ border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
+.Childhead h1{
+  margin-top: 85px;
+  font-size: 5vw;
+  width: 24.8vw;
+  margin-left: 37vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Childhead h3{
+  font-size: 1.5vw;
+  width: 25vw;
+  margin-left: 37vw;
+}
 }
