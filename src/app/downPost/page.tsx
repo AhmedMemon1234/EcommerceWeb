@@ -6,16 +6,13 @@ export default function DownPost(){
                     <source src="/video.mp4" type="video/mp4"/>
                     Your Browser Doesnt Support The Video Tag
                 </video>
-
             </div>
             <div className="Childdown">
                 <video autoPlay loop muted className="video">
                     <source src="/video2.mp4" type="video/mp4"/>
                     Your Browser Doesnt Support The Video Tag
                 </video>
-
             </div>
-
         </div>
     )
 }

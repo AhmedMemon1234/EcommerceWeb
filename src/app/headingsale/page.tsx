@@ -5,9 +5,9 @@ export default function Heading(){
             <div className="Childhead">
             <Steps/>
              <h1>Flash Sale</h1>
-             <h3>Winter Flash Sale For You December</h3>
+             <h3>December Winter Flash Sale For You</h3>
                 <button>Shop All Products</button>
-                <p>50% OFF NOW</p>
+                <p>50%-20% Sale</p>
             </div>
         </div>
     )

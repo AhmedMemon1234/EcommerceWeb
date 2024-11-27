@@ -289,26 +289,26 @@
 }
 .Parentitems{
   display: flex;
-  background-color:  rgba(#1B1931, #44174E, #662249, #A34054, #ED9E59, #E9BCB9);
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .Childitem1{
-  width: 200px;
+  width: 120px;
 overflow: hidden;
 border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-margin: 20px;
+margin: 15px;
+box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 transition: 1s ease;
 }
 .Childitem1:hover{
 transform:scale(1.15);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .Childitem1 .img1{
   width: 100%;
   padding: 10px;
-  height: 200px;
+  height: 150px;
   cursor: context-menu;
 }
 .card1content{
@@ -316,8 +316,8 @@ transform:scale(1.15);
   cursor: context-menu;
 }
 .card1content p{
-  font-size: 12px;
-  margin-bottom: 5px;
+  font-size: 10px;
+  margin-bottom: 2px;
 }
 
 .card1content .btn{
@@ -326,6 +326,7 @@ transform:scale(1.15);
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  font-size:10px;
   margin-top: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 5px 5px 5px 5px;
@@ -336,7 +337,8 @@ transform:scale(1.15);
 }
 
 .card1content h1{
-  font-size: 25px;
+  font-size: 18px;
+  padding-top: 5px;
   color: rgb(255, 102, 0);
 }
 .card1content span{
@@ -360,8 +362,9 @@ transform:scale(1.15);
 
 .Childhead p{
   margin-top: -8vh;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   border-bottom: 2px solid black;
-  background-color:  rgb(224, 223, 223);
+  background-color : white;
   color: orangered;
   font-size:3vw;
   width: 100%;
@@ -372,6 +375,7 @@ transform:scale(1.15);
 .Childhead button{
 color: red;
 margin-top: 7vh;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 margin-left: 83.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
@@ -380,10 +384,12 @@ padding: 5px 5px 5px 5px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
+  position: relative;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .Childdown{
-  width: 590px;
+  width: 580px;
 overflow: hidden;
 margin: 20px;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -391,9 +397,16 @@ transition: 1s ease;
 }
 .Childdown .video{
   width: 100%;
-  filter: blur(1px);
+  filter: contrast(130%);
   height: 100%; 
   cursor: context-menu;
+  transition: 0.3s ease;
+  
+}
+.Childdown .video:hover{
+   transform:scale(1.05);
+   filter: contrast(180%) blur(2px);
+
 }
 
 .Childhead h1{
@@ -405,6 +418,257 @@ transition: 1s ease;
 .Childhead h3{
   font-size: 1.3vw;
   margin-left: 40vw;
+}
+
+.Parentdown2{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+}
+.Childdown2{
+  overflow: hidden;
+  width:320px;
+  height: 450px;
+  margin: 50px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: 0.3s ease;
+}
+
+.Childdown2:hover{
+  transform:scale(1.05);
+  filter: contrast(130%) blur(1px);
+
+}
+.Childdown2 .imagesmall{
+  width: 100%;
+  height: 100%;
+  cursor: context-menu;
+}
+
+
+.Parentbannerbot{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000, #323232);
+  justify-content: center;
+}
+.Childbannerbot{
+  overflow: hidden;
+  width:100%;
+  height:240px;
+  justify-items: center;
+  transition: 0.3s ease;
+}
+
+.Childbannerbot p{
+  font-size: 16px;
+  color: white;
+  margin-top: 55px;
+}
+
+.Childbannerbot h1{
+font-size: 3vw;
+color: white;
+}
+.Childbannerbot span{
+  color: orangered;
+}
+.Childbannerbot button{
+  background-color: rgb(0, 99, 45);
+  padding: 7px;
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2vw;
+  transition: 0.3s ease;
+}
+.Childbannerbot button:hover{
+  transform: rotate(360deg);
+}
+
+
+.Parentcategories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 120px;
+  padding-bottom: 17px;
+}
+.Childcategories{
+  width: 150px;
+  margin: 20px;
+overflow: hidden;
+transition: transform 0.3s ease-in-out;
+}
+
+.Childcategories:hover {
+  animation: vipTransform 1s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes vipTransform {
+  0% {
+    transform: scale(1) rotate(0deg);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.5);
+  }
+  25% {
+    transform: scale(1.1) rotate(10deg) translate(10px, -10px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.2) rotate(-10deg) translate(-10px, 10px);
+    box-shadow: 0 0 25px rgba(0, 0, 255, 0.5), 0 0 50px rgba(255, 0, 255, 0.5);
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg) translate(5px, -5px);
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 20, 147, 0.5);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.5);
+  }
+}
+.Childcategories .image2{
+  width: 100%;
+  height: 150px;
+  border-radius: 100%;
+  cursor: context-menu;
+}
+.Categorycontent{
+  padding: 5px;
+  cursor: context-menu;
+}
+.Categorycontent h2{
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-self: center;
+}
+.tophead h1{
+  position: absolute;
+  margin-top: -60px;
+  font-size: 40px;
+  margin-left: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.Childnews{
+  width: 100%;
+  height: 100%;
+}
+.Childnews .imgnews{
+  height: 70vh;
+  border-radius: 40%;
+  filter: blur(2px);
+  z-index: 1;
+}
+.Footer{
+  background-color: black;
+  height: 30vh;
+  position: absolute;
+  width: 100%;
+  margin-top: -162px;
+  justify-content: center;
+  z-index: 2;
+}
+.Footer .facebookicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: 5vh;
+  margin-left: 39.5vw;
+}
+
+.Footer .linkedinicon{
+  color: green;
+  font-size: 55px;
+  margin-top: -8.9vh;
+  margin-left: 45.5vw;
+}
+
+.Footer .whatsappicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: -8.9vh;
+  margin-left: 51.5vw;
+}
+
+.Footer .githubicon{
+  color: green;
+  font-size: 50px;
+  margin-top: -8.3vh;
+  margin-left: 57.5vw;
+}
+
+.newscontent{
+  position: absolute;
+  margin-top: 5vh;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+.newscontent p{
+  font-size: 12px;
+  margin-left: 30px;
+}
+.newscontent input{
+margin-top: 55px;
+font-size: 10px;
+width: 250px;
+height: 31px;
+padding-left: 10px;
+color: black;
+margin-left: 20px;
+border-radius: 10px;
+}
+.newscontent button{
+  margin-top: 65px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 6px;
+  margin-left: -30px;
+  background-color: red;
+}
+.Footer ul{
+  color:  white;
+  display: flex;
+  margin-top: 3vh;
+  margin-left:34.5px;
+  gap: 15px;
+  font-weight: 600;
+}
+.Footer h3{
+  color: white;
+  margin-top: 5.3vh;
+  width: 100%;
+  padding-left: 37vw;
+  height: 24px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+
+.Footer h4{
+  color: white;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 44.2vw;
+  height: 24px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+.Footer h3 span{
+  color: red;
 }
 @media (max-width:480px){
   .ChildHeader h1{
@@ -580,9 +844,177 @@ padding: 5px 5px 5px 5px;
 }
 .Childhead h3{
   font-size: 2.5vw;
-  margin-left: 31.5vw;
+  margin-left: 31vw;
 }
 
+.Parentbannerbot{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000, #323232);
+  justify-content: center;
+}
+.Childbannerbot{
+  overflow: hidden;
+  width:100%;
+  height:180px;
+  justify-items: center;
+  transition: 0.3s ease;
+}
+
+.Childbannerbot p{
+  font-size: 15px;
+  color: white;
+  margin-top: 55px;
+}
+
+.Childbannerbot h1{
+font-size: 15px;
+color: white;
+}
+.Childbannerbot span{
+  color: orangered;
+}
+.Childbannerbot button{
+  background-color: rgb(0, 99, 45);
+  padding: 7px;
+  margin-top: 10px;
+  color: white;
+  font-size: 10px;
+  transition: 0.3s ease;
+}
+
+.tophead h1{
+  font-size: 20px;
+  margin-left: -2px;
+}
+.Childnews{
+  width: 100%;
+  height: 100%;
+}
+.Childnews .imgnews{
+  height: 350px;
+  border-radius: 40%;
+  filter: blur(2px);
+  z-index: 1;
+}
+.newscontent{
+  position: absolute;
+  margin-top: 5vh;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+.newscontent h1{
+  font-size: 12px;
+   margin-left: 60px;
+}
+.newscontent p{
+  font-size: 10px;
+  margin-left: 30px;
+}
+.newscontent input{
+margin-top: 55px;
+font-size: 10px;
+width: 250px;
+height: 30px;
+padding-left: 10px;
+color: black;
+margin-left: 20px;
+border-radius: 10px;
+}
+.newscontent button{
+  margin-top: 64px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px;
+  margin-left: -63px;
+  background-color: red;
+}
+
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.Footer{
+  background-color: black;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  margin-top: -162px;
+  justify-content: center;
+  z-index: 2;
+}
+.Footer .facebookicon1{
+  color: green;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 24.5vw;
+}
+
+.Footer .linkedinicon{
+  color: green;
+  font-size: 35px;
+  margin-top: -33px;
+  margin-left: 37.5vw;
+}
+
+.Footer .whatsappicon1{
+  color: green;
+  font-size: 30px;
+  margin-top: -33px;
+  margin-left: 53vw;
+}
+
+.Footer .githubicon{
+  color: green;
+  font-size: 30px;
+  margin-top: -31px;
+  margin-left: 68vw;
+}
+
+.Footer ul{
+  color:  white;
+  display: flex;
+  margin-top: 30px;
+  margin-left:20vw;
+  gap: 3.5vw;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.Footer h3{
+  color: white;
+  margin-top: 28px;
+  width: 100%;
+  padding-left: 15vw;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 3vw;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+
+.Footer h4{
+  color: white;
+  width: 100%;
+  font-size: 2vw;
+  padding-left: 37vw;
+  height: 29px;
+  padding-top: 5px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+.Footer h3 span{
+  color: red;
+}
 }
 
 @media (min-width:481px) and (max-width:768px){
@@ -756,8 +1188,179 @@ padding: 5px 5px 5px 5px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Childhead h3{
-  margin-left: 31.5vw;
+  margin-left: 31vw;
   font-size: 2.5vw;
+}
+
+
+.Parentbannerbot{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000, #323232);
+  justify-content: center;
+}
+.Childbannerbot{
+  overflow: hidden;
+  width:100%;
+  height:200px;
+  justify-items: center;
+  transition: 0.3s ease;
+}
+
+.Childbannerbot p{
+  font-size: 15px;
+  color: white;
+  margin-top: 55px;
+}
+
+.Childbannerbot h1{
+font-size: 20px;
+color: white;
+}
+.Childbannerbot span{
+  color: orangered;
+}
+.Childbannerbot button{
+  background-color: rgb(0, 99, 45);
+  padding: 7px;
+  margin-top: 10px;
+  color: white;
+  font-size: 10px;
+  transition: 0.3s ease;
+}
+
+.tophead h1{
+  font-size: 30px;
+  margin-left: 35px;
+}
+
+.Childnews{
+  width: 100%;
+  height: 100%;
+}
+.Childnews .imgnews{
+  height: 380px;
+  border-radius: 40%;
+  filter: blur(2px);
+  z-index: 1;
+}
+.newscontent{
+  position: absolute;
+  margin-top: 5vh;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+.newscontent h1{
+  font-size: 12px;
+   margin-left: 60px;
+}
+.newscontent p{
+  font-size: 10px;
+  margin-left: 30px;
+}
+.newscontent input{
+margin-top: 55px;
+font-size: 10px;
+width: 250px;
+height: 30px;
+padding-left: 10px;
+color: black;
+margin-left: 20px;
+border-radius: 10px;
+}
+.newscontent button{
+  margin-top: 64px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px;
+  margin-left: -63px;
+  background-color: red;
+}
+
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.Footer{
+  background-color: black;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  margin-top: -162px;
+  justify-content: center;
+  z-index: 2;
+}
+.Footer .facebookicon1{
+  color: green;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 24.5vw;
+}
+
+.Footer .linkedinicon{
+  color: green;
+  font-size: 35px;
+  margin-top: -33px;
+  margin-left: 37.5vw;
+}
+
+.Footer .whatsappicon1{
+  color: green;
+  font-size: 30px;
+  margin-top: -33px;
+  margin-left: 53vw;
+}
+
+.Footer .githubicon{
+  color: green;
+  font-size: 30px;
+  margin-top: -31px;
+  margin-left: 68vw;
+}
+
+.Footer ul{
+  color:  white;
+  display: flex;
+  margin-top: 30px;
+  margin-left:22vw;
+  gap: 2.1vw;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.Footer h3{
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 17vw;
+  height: 60px;
+  padding-top: 10px;
+  font-size: 3vw;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+
+.Footer h4{
+  color: white;
+  width: 100%;
+  font-size: 2vw;
+  padding-left: 38vw;
+  height: 29px;
+  margin-top: -5px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+.Footer h3 span{
+  color: red;
 }
 }
 @media (min-width:769px) and (max-width:1024px){
@@ -937,6 +1540,174 @@ padding: 5px 5px 5px 5px;
   font-size: 1.5vw;
   width: 25%;
 }
+
+.Parentbannerbot{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000, #323232);
+  justify-content: center;
+}
+.Childbannerbot{
+  overflow: hidden;
+  width:100%;
+  height:220px;
+  justify-items: center;
+  transition: 0.3s ease;
+}
+
+.Childbannerbot p{
+  font-size: 15px;
+  color: white;
+  margin-top: 55px;
+}
+
+.Childbannerbot h1{
+font-size: 30px;
+color: white;
+}
+.Childbannerbot span{
+  color: orangered;
+}
+.Childbannerbot button{
+  background-color: rgb(0, 99, 45);
+  padding: 7px;
+  margin-top: 10px;
+  color: white;
+  font-size: 10px;
+  transition: 0.3s ease;
+}
+.tophead h1{
+  font-size: 30px;
+}
+.Childnews{
+  width: 100%;
+  height: 100%;
+}
+.Childnews .imgnews{
+  height: 380px;
+  border-radius: 40%;
+  filter: blur(2px);
+  z-index: 1;
+}
+.newscontent{
+  position: absolute;
+  margin-top: 5vh;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+.newscontent h1{
+  font-size: 12px;
+   margin-left: 60px;
+}
+.newscontent p{
+  font-size: 10px;
+  margin-left: 30px;
+}
+.newscontent input{
+margin-top: 55px;
+font-size: 10px;
+width: 250px;
+height: 30px;
+padding-left: 10px;
+color: black;
+margin-left: 20px;
+border-radius: 10px;
+}
+.newscontent button{
+  margin-top: 64px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px;
+  margin-left: -63px;
+  background-color: red;
+}
+
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.Footer{
+  background-color: black;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  margin-top: -162px;
+  justify-content: center;
+  z-index: 2;
+}
+.Footer .facebookicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: 28px;
+  margin-left: 27.5vw;
+}
+
+.Footer .linkedinicon{
+  color: green;
+  font-size: 55px;
+  margin-top: -50px;
+  margin-left: 40vw;
+}
+
+.Footer .whatsappicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-left: 53vw;
+}
+
+.Footer .githubicon{
+  color: green;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-left: 68vw;
+}
+
+.Footer ul{
+  color:  white;
+  display: flex;
+  margin-top: 30px;
+  margin-left:22vw;
+  gap: 2.1vw;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.Footer h3{
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 16vw;
+  height: 60px;
+  padding-top: 10px;
+  font-size: 3vw;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+
+.Footer h4{
+  color: white;
+  width: 100%;
+  font-size: 1.5vw;
+  padding-left: 40vw;
+  height: 55px;
+  padding-top: 10px;
+  margin-top: -5px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+.Footer h3 span{
+  color: red;
+}
 }
 @media (min-width:1025px) and (max-width:1440px){
   .ChildHeader h1{
@@ -1114,6 +1885,134 @@ padding: 5px 5px 5px 5px;
   font-size: 1.5vw;
   width: 25vw;
   margin-left: 37vw;
+}
+
+.Childnews{
+  width: 100%;
+  height: 100%;
+}
+.Childnews .imgnews{
+  height: 380px;
+  width: 100vw;
+  border-radius: 40%;
+  filter: blur(2px);
+  z-index: 1;
+}
+.newscontent{
+  position: absolute;
+  margin-top: 5vh;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+.newscontent h1{
+  font-size: 30px;
+   margin-left: 30px;
+}
+.newscontent p{
+  font-size: 15px;
+  margin-left: 55px;
+}
+.newscontent input{
+margin-top: 55px;
+font-size: 10px;
+width: 250px;
+height: 30px;
+padding-left: 10px;
+color: black;
+margin-left: 85px;
+border-radius: 10px;
+}
+.newscontent button{
+  margin-top: 64px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px;
+  margin-left: -63px;
+  background-color: red;
+}
+
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.Footer{
+  background-color: black;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  margin-top: -162px;
+  justify-content: center;
+  z-index: 2;
+}
+.Footer .facebookicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: 29px;
+  margin-left: 29vw;
+}
+
+.Footer .linkedinicon{
+  color: green;
+  font-size: 55px;
+  margin-top: -52px;
+  margin-left: 40.5vw;
+}
+
+.Footer .whatsappicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-left: 52.5vw;
+}
+
+.Footer .githubicon{
+  color: green;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-left: 65vw;
+}
+
+.Footer ul{
+  color:  white;
+  display: flex;
+  margin-top: 30px;
+  margin-left:27.5vw;
+  gap: 2.1vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.Footer h3{
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 20vw;
+  height: 60px;
+  padding-top: 10px;
+  font-size: 2.5vw;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+
+.Footer h4{
+  color: white;
+  width: 100%;
+  font-size: 1.3vw;
+  padding-left: 40vw;
+  height: 55px;
+  padding-top: 10px;
+  margin-top: -5px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+.Footer h3 span{
+  color: red;
 }
 }
 @media (min-width:1441px){
@@ -1294,5 +2193,172 @@ padding: 5px 5px 5px 5px;
   font-size: 1.5vw;
   width: 25vw;
   margin-left: 37vw;
+}
+
+.Parentbannerbot{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000, #323232);
+  justify-content: center;
+}
+.Childbannerbot{
+  overflow: hidden;
+  width:100%;
+  height:260px;
+  justify-items: center;
+  transition: 0.3s ease;
+}
+
+.Childbannerbot p{
+  font-size: 20px;
+  color: white;
+  margin-top: 55px;
+}
+
+.Childbannerbot h1{
+font-size: 50px;
+color: white;
+}
+.Childbannerbot span{
+  color: orangered;
+}
+.Childbannerbot button{
+  background-color: rgb(0, 99, 45);
+  padding: 7px;
+  margin-top: 10px;
+  color: white;
+  font-size: 10px;
+  transition: 0.3s ease;
+}
+
+.Childnews{
+  width: 100%;
+  height: 100%;
+}
+.Childnews .imgnews{
+  height: 380px;
+  width: 100vw;
+  border-radius: 40%;
+  filter: blur(2px);
+  z-index: 1;
+}
+.newscontent{
+  position: absolute;
+  margin-top: 5vh;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+}
+.newscontent h1{
+  font-size: 30px;
+   margin-left: 50px;
+}
+.newscontent p{
+  font-size: 15px;
+  margin-left: 75px;
+}
+.newscontent input{
+margin-top: 55px;
+font-size: 10px;
+width: 250px;
+height: 30px;
+padding-left: 10px;
+color: black;
+margin-left: 105px;
+border-radius: 10px;
+}
+.newscontent button{
+  margin-top: 64px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px;
+  margin-left: -63px;
+  background-color: red;
+}
+
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+.Footer{
+  background-color: black;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  margin-top: -162px;
+  justify-content: center;
+  z-index: 2;
+}
+.Footer .facebookicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: 28px;
+  margin-left: 29vw;
+}
+
+.Footer .linkedinicon{
+  color: green;
+  font-size: 55px;
+  margin-top: -50px;
+  margin-left: 40.5vw;
+}
+
+.Footer .whatsappicon1{
+  color: green;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-left: 52.5vw;
+}
+
+.Footer .githubicon{
+  color: green;
+  font-size: 50px;
+  margin-top: -50px;
+  margin-left: 65vw;
+}
+
+.Footer ul{
+  color:  white;
+  display: flex;
+  margin-top: 30px;
+  margin-left:27.5vw;
+  gap: 2.1vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.Footer h3{
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 20vw;
+  height: 60px;
+  padding-top: 10px;
+  font-size: 2.5vw;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+
+.Footer h4{
+  color: white;
+  width: 100%;
+  font-size: 1.3vw;
+  padding-left: 40vw;
+  height: 55px;
+  padding-top: 10px;
+  margin-top: -5px;
+  justify-self: center;
+  font-weight: 600;
+  background-color: green;
+}
+.Footer h3 span{
+  color: red;
 }
 }
