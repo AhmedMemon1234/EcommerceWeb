@@ -294,7 +294,7 @@
   margin-top: 60px;
 }
 .Childitem1{
-  width: 120px;
+  width: 170px;
 overflow: hidden;
 border-radius: 10px;
 margin: 15px;
@@ -316,7 +316,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   cursor: context-menu;
 }
 .card1content p{
-  font-size: 10px;
+  font-size: 15px;
   margin-bottom: 2px;
 }
 
@@ -326,7 +326,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  font-size:10px;
+  font-size:13px;
   margin-top: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 5px 5px 5px 5px;
@@ -337,7 +337,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 }
 
 .card1content h1{
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 5px;
   color: rgb(255, 102, 0);
 }
@@ -902,7 +902,7 @@ color: white;
 }
 .newscontent{
   position: absolute;
-  margin-top: 5vh;
+  margin-top: 30px;
   color: white;
   font-size: 2vw;
   z-index: 10;
@@ -916,7 +916,7 @@ color: white;
   margin-left: 30px;
 }
 .newscontent input{
-margin-top: 55px;
+margin-top: 54px;
 font-size: 10px;
 width: 250px;
 height: 30px;
@@ -926,9 +926,9 @@ margin-left: 20px;
 border-radius: 10px;
 }
 .newscontent button{
-  margin-top: 64px;
+  margin-top: 60px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 11px;
   padding: 6px;
   margin-left: -63px;
   background-color: red;
@@ -1014,6 +1014,66 @@ border-radius: 10px;
 }
 .Footer h3 span{
   color: red;
+}
+
+.Parentitems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+.Childitem1{
+  width: 40vw;
+overflow: hidden;
+border-radius: 10px;
+margin: 15px;
+box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+transition: 1s ease;
+}
+.Childitem1:hover{
+transform:scale(1.15);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Childitem1 .img1{
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  cursor: context-menu;
+}
+.card1content{
+  padding: 5px;
+  cursor: context-menu;
+}
+.card1content p{
+  font-size: 3vw;
+  margin-bottom: 2px;
+}
+
+.card1content .btn{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size:3vw;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 5px 5px 5px 5px;
+  transition: 0.5s ease;
+}
+.card1content .btn:hover{
+  background-color: red;
+}
+
+.card1content h1{
+  font-size: 4.5vw;
+  padding-top: 5px;
+  color: rgb(255, 102, 0);
+}
+.card1content span{
+  font-size: 13px;
+  text-decoration: line-through;
+  color:  gray;
 }
 }
 
@@ -1249,7 +1309,7 @@ color: white;
 }
 .newscontent{
   position: absolute;
-  margin-top: 5vh;
+  margin-top:30px;
   color: white;
   font-size: 2vw;
   z-index: 10;
@@ -1594,27 +1654,27 @@ color: white;
 }
 .newscontent{
   position: absolute;
-  margin-top: 5vh;
+  margin-top: 30px;
   color: white;
   font-size: 2vw;
   z-index: 10;
 }
 .newscontent h1{
-  font-size: 12px;
-   margin-left: 60px;
+  font-size: 2vw;
+   margin-left: 110px;
 }
 .newscontent p{
-  font-size: 10px;
+  font-size: 2vw;
   margin-left: 30px;
 }
 .newscontent input{
 margin-top: 55px;
-font-size: 10px;
+font-size: 1.1vw;
 width: 250px;
 height: 30px;
 padding-left: 10px;
 color: black;
-margin-left: 20px;
+margin-left: 120px;
 border-radius: 10px;
 }
 .newscontent button{
@@ -1900,7 +1960,7 @@ padding: 5px 5px 5px 5px;
 }
 .newscontent{
   position: absolute;
-  margin-top: 5vh;
+  margin-top: 30px;
   color: white;
   font-size: 2vw;
   z-index: 10;
@@ -2247,7 +2307,7 @@ color: white;
 }
 .newscontent{
   position: absolute;
-  margin-top: 5vh;
+  margin-top: 30px;
   color: white;
   font-size: 2vw;
   z-index: 10;
