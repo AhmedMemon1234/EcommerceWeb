@@ -178,7 +178,6 @@
   margin-top: 30px;
   width: 100%;
   height: 100vh;
-  position: absolute;
 }
 .posters .bigbanner{
   width: 95vw;
@@ -642,7 +641,7 @@ border-radius: 10px;
   color:  white;
   display: flex;
   margin-top: 3vh;
-  margin-left:34.5px;
+  margin-left:34px;
   gap: 15px;
   font-weight: 600;
 }
@@ -677,17 +676,17 @@ border-radius: 10px;
     margin-top: 0.5vh;
   }
   .Headercontent h1{
-    font-size: 30px;
+    font-size: 35px;
     width: 30vw;
-    margin-left: -95vw;
-    margin-top: -40px;
+    margin-left: -93.5vw;
+    margin-top: -43px;
     height: 100px;
   }
   .Headercontent span{
     font-size: 1.2vw;
     height: 50px;
     width: 10px;
-    margin-left: -2vw;    
+    margin-left: -3vw;    
   }
   .ChildHeader{
     height: 20px;
@@ -744,8 +743,9 @@ display: none;
 }
 
 .posters .bigbanner{
-  width: 95vw;
+  width:95%;
   margin-left: 2.4vw;
+  overflow: hidden;
   height:380px;
   margin-top: -5px;
   
@@ -866,7 +866,6 @@ padding: 5px 5px 5px 5px;
   justify-content: center;
 }
 .Childbannerbot{
-  overflow: hidden;
   width:100%;
   height:180px;
   justify-items: center;
@@ -965,35 +964,35 @@ border-radius: 10px;
   color: green;
   font-size: 30px;
   margin-top: 30px;
-  margin-left: 24.5vw;
+  margin-left: 21.5vw;
 }
 
 .Footer .linkedinicon{
   color: green;
   font-size: 35px;
   margin-top: -33px;
-  margin-left: 37.5vw;
+  margin-left: 34.5vw;
 }
 
 .Footer .whatsappicon1{
   color: green;
   font-size: 30px;
   margin-top: -33px;
-  margin-left: 53vw;
+  margin-left: 50vw;
 }
 
 .Footer .githubicon{
   color: green;
   font-size: 30px;
   margin-top: -31px;
-  margin-left: 68vw;
+  margin-left: 65vw;
 }
 
 .Footer ul{
   color:  white;
   display: flex;
   margin-top: 30px;
-  margin-left:20vw;
+  margin-left:17vw;
   gap: 3.5vw;
   font-size: 2vw;
   font-weight: 600;
@@ -1002,7 +1001,7 @@ border-radius: 10px;
   color: white;
   margin-top: 28px;
   width: 100%;
-  padding-left: 15vw;
+  padding-left: 12vw;
   height: 30px;
   padding-top: 10px;
   font-size: 3vw;
@@ -1015,7 +1014,7 @@ border-radius: 10px;
   color: white;
   width: 100%;
   font-size: 2vw;
-  padding-left: 37vw;
+  padding-left: 35vw;
   height: 29px;
   padding-top: 5px;
   justify-self: center;
@@ -1409,7 +1408,7 @@ border-radius: 10px;
   color: white;
   margin-top: 20px;
   width: 100%;
-  padding-left: 17vw;
+  padding-left: 15vw;
   height: 60px;
   padding-top: 10px;
   font-size: 3vw;
@@ -1422,7 +1421,7 @@ border-radius: 10px;
   color: white;
   width: 100%;
   font-size: 2vw;
-  padding-left: 38vw;
+  padding-left: 37vw;
   height: 29px;
   margin-top: -5px;
   justify-self: center;
