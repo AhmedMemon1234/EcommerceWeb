@@ -368,6 +368,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   background-color : white;
   color: orangered;
   font-size:3vw;
+  justify-items: center;
   width: 100%;
   padding-left:4vw ;
   font-weight: 560;
@@ -413,6 +414,7 @@ transition: 1s ease;
 .Childhead h1{
   margin-top: 8vh;
   font-size: 3vw;
+  justify-items: center;
   margin-left: 40vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -817,7 +819,8 @@ margin-top: 1px;
 .Childhead{
   width: 100%;
   height: 41%;
-  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
 }
 
 
@@ -829,7 +832,6 @@ margin-top: 1px;
   padding-top: 11px;
   padding-left:14px ;
   font-weight: 560;
-
 }
 
 .Childhead button{
@@ -844,15 +846,14 @@ padding: 5px 5px 5px 5px;
 
 .Childhead h1{
   margin-top: 85px;
-  font-size: 15vw;
-  width: 80vw;
-  margin-left: 15vw;
+  font-size: 10vw;
+  width: 83%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Childhead h3{
-  width: 60vw;
-  margin-left: 22vw;
-  font-size: 3.5vw;
+  width: 75%;
+  font-size: 2.5vw;
+
 }
 
 .Parentbannerbot{
