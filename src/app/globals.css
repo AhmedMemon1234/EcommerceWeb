@@ -358,7 +358,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 .Childhead{
   width: 100%;
   height: 53vh;
-  justify-content: center;
 }
 
 .Childhead p{
@@ -370,7 +369,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   font-size:3vw;
   justify-items: center;
   width: 100%;
-  padding-left:4vw ;
   font-weight: 560;
 }
 
@@ -415,12 +413,11 @@ transition: 1s ease;
   margin-top: 8vh;
   font-size: 3vw;
   justify-items: center;
-  margin-left: 40vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Childhead h3{
   font-size: 1.3vw;
-  margin-left: 40vw;
+  justify-items: center;
 }
 
 .Parentdown2{
@@ -819,7 +816,6 @@ margin-top: 1px;
 .Childhead{
   width: 100%;
   height: 41%;
-  justify-items: center;
   overflow: hidden;
 }
 
@@ -846,13 +842,15 @@ padding: 5px 5px 5px 5px;
 
 .Childhead h1{
   margin-top: 85px;
-  font-size: 10vw;
-  width: 83%;
+  font-size: 21vw;
+  width: 100%;
+  justify-self: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Childhead h3{
-  width: 75%;
-  font-size: 2.5vw;
+  width: 57%;
+  justify-self: center;
+  font-size: 3.5vw;
 
 }
 
