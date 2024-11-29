@@ -812,6 +812,7 @@ margin-top: 1px;
   width: 100%;
   height: 50%;
   display: flex;
+  justify-content: center;
 }
 .Childhead{
   width: 100%;
@@ -843,13 +844,15 @@ padding: 5px 5px 5px 5px;
 
 .Childhead h1{
   margin-top: 85px;
-  font-size: 21vw;
-  margin-left: 0vw;
+  font-size: 15vw;
+  width: 80vw;
+  margin-left: 15vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Childhead h3{
+  width: 60vw;
+  margin-left: 22vw;
   font-size: 3.5vw;
-  margin-left: 23vw;
 }
 
 .Parentbannerbot{
