@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 *{
   margin:0;
   padding: 0;
@@ -120,59 +119,6 @@
   justify-content: center;
   align-content: center;
 }
-
-
-.Parentbanner .Childbanner{
-  height: 4vh;
-  width: 47%;
-  display: flex;
-  gap: 3vw;
-  cursor: pointer;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-top: 1vh;
-  margin-left: -2vw;
-}
-.Childbanner .home:hover{
-  transition: 1s ease;
-  transform: translateY(-5px);
-  color: red;
-}
-
-
-.Childbanner .sales:hover{
-  transition: 1s ease;
-  transform: translateY(-5px);
-  color: red;
-}
-
-
-.Childbanner .products:hover{
-  transition: 1s ease;
-  transform: translateY(-5px);
-  color: red;
-}
-
-.Childbanner .services:hover{
-  transition: 1s ease;
-  transform: translateY(-5px);
-  color: red;
-}
-
-
-.Childbanner .about:hover{
-  transition: 1s ease;
-  transform: translateY(-5px);
-  color: red;
-}
-
-
-
-.Childbanner .contact:hover{
-  transition: 1s ease;
-  transform: translateY(-5px);
-  color: red;
-}
-
 
 .Parentbanner .posters{
   margin-top: 30px;
@@ -293,8 +239,11 @@
   justify-content: center;
   margin-top: 60px;
 }
+.Parentitems:hover > :not(.Childitem1:hover){
+  filter: blur(1px);
+}
 .Childitem1{
-  width: 170px;
+width: 170px;
 overflow: hidden;
 border-radius: 10px;
 margin: 15px;
@@ -408,16 +357,6 @@ transition: 1s ease;
 
 }
 
-.Childhead h1{
-  margin-top: 8vh;
-  font-size: 3vw;
-  justify-items: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.Childhead h3{
-  font-size: 1.3vw;
-  justify-items: center;
-}
 
 .Parentdown2{
   display: flex;
@@ -669,6 +608,145 @@ border-radius: 10px;
 .Footer h3 span{
   color: red;
 }
+.Childbanner .icon{
+  display: inline;
+}
+.slide{
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+  top: 130px;
+  margin-left: -1vw;
+  transform: translateY(-4000px);
+  transition: 0.5s ease;
+  overflow: auto;
+}
+.slide h1{
+  color: red;
+  font-weight: 800;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding: 10px 0;
+  padding-right: 30px;
+  pointer-events: none;
+}
+.Childbanner li{
+list-style: none;
+font-family: sans-serif;
+}
+
+.Childbanner li a{ 
+  color: #011a41;
+  font-weight: 500;
+  padding: 5px 0;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.2s ease-out; 
+}
+.Childbanner li:hover a{
+  color: #fff;
+  background-color: red;
+}
+.Childbanner li a .icon{
+  width: 40px;
+  text-align: center;
+}
+.checkbox{
+  display: none;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+.toggle{
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  z-index: 101;
+  cursor: pointer;
+  border-radius: 2px;
+  top: 130px;
+  margin-left: -1vw;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.toggle .common{
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.toggle .top_line{
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.checkbox:checked ~ .toggle .top_line{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+
+.checkbox:checked ~ .toggle .bottom_line{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(-45deg);
+}
+
+.checkbox:checked ~ .toggle .middle_line{
+ opacity: 0;
+  transform: translateX(20px);
+}
+.checkbox:checked ~ .slide{
+  transform: translateX(0);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.Childhead{
+  margin-top: 55px;
+  width: 100%;
+  background-image: url("/sale.jpg");
+  background-size: 100% 80%;
+  height: 300px;
+  animation: Changeimage 15s linear infinite;
+}
+@keyframes Changeimage{
+  0%{
+    background-image: url("/sale.jpg");
+  }
+  20%{
+    background-image: url("/sale2.jpg");
+  }
+  40%{
+    background-image: url("/sale3.jpg");
+  }
+  60%{
+    background-image: url("/sale4.jpg");
+  }
+  80%{
+    background-image: url("/sale5.jpg");
+  }
+  100%{
+    background-image: url("/sale6.jpg");
+  }
+}
 @media (max-width:480px){
   .ChildHeader h1{
     font-size: 2vw;
@@ -734,13 +812,6 @@ border-radius: 10px;
 }
 
 
-.Parentbanner .Childbanner{
-  height: 20px;
-  width: 60%;
-  font-size: 1.8vw;
-display: none;
-  margin-top: 8px;
-}
 
 .posters .bigbanner{
   width:95%;
@@ -815,13 +886,13 @@ margin-top: 1px;
 }
 .Childhead{
   width: 100%;
+  margin-top: 100px;
   height: 41%;
   overflow: hidden;
 }
 
-
 .Childhead p{
-  margin-top: 50px;
+  margin-top: 250px;
   font-size: 20px;
   height: 52px;
   width: 100%;
@@ -837,24 +908,12 @@ margin-right: 13px;
 height: 40px;
 width: 30%;
 float: right;
-margin-top: 55px;
+margin-top: 255px;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
 
-.Childhead h1{
-  margin-top: 85px;
-  font-size: 15vw;
-  width: 100%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.Childhead h3{
-  width: 100%;
-  padding-left: 1vw;
-  font-size: 3.5vw;
-
-}
 
 .Parentbannerbot{
   display: flex;
@@ -1074,6 +1133,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   background-color: red;
 }
 
+
 .card1content h1{
   font-size: 4.5vw;
   padding-top: 5px;
@@ -1084,6 +1144,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   text-decoration: line-through;
   color:  gray;
 }
+
 }
 
 @media (min-width:481px) and (max-width:768px){
@@ -1150,14 +1211,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   margin-top: -31px;
 }
 
-
-.Parentbanner .Childbanner{
-  height: 20px;
-  width: 60%;
-  font-size: 1.8vw;
-display: none;
-  margin-top: 8px;
-}
 
 .posters .bigbanner{
   width: 95vw;
@@ -1228,10 +1281,11 @@ margin-top: 1px;
 .Childhead{
   width: 100%;
   height: 41%;
+  margin-top: 100px;
 }
 
 .Childhead p{
-  margin-top: -43.5px;
+  margin-top: 300px;
   font-size: 20px;
   height: 52px;
   width: 100%;
@@ -1243,22 +1297,12 @@ margin-top: 1px;
 
 .Childhead button{
 color: red;
+position: absolute;
 font-size: 2vw;
-margin-top: 70px;
+margin-top: 306px;
 margin-left: 76.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
-}
-
-.Childhead h1{
-  margin-top: 95px;
-  font-size: 7vw;
-  margin-left: 34vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.Childhead h3{
-  margin-left: 31vw;
-  font-size: 2.5vw;
 }
 
 
@@ -1494,18 +1538,7 @@ border-radius: 10px;
   font-size: 30px;
   width: 5vw;
   margin-top: -31px;
-}.Parentbanner .Childbanner{
-  height: 20px;
-  width: 70%;
-  z-index: 100;
-  display: none;
-  justify-content: center;
-  margin-left: 4.5vw;
-  font-size: 1.5vw;
-  font-weight: 600;
-  margin-top: 550px;
 }
-
 .posters .bigbanner{
   width: 95vw;
   margin-top: 8px;
@@ -1575,10 +1608,11 @@ margin-top: 1px;
 .Childhead{
   width: 100%;
   height: 41%;
+  margin-top: 70px;
 }
 
 .Childhead p{
-  margin-top: -60.5px;
+  margin-top: 300.5px;
   font-size: 35px;
   height: 82px;
   width: 100%;
@@ -1590,24 +1624,12 @@ margin-top: 1px;
 
 .Childhead button{
 color: red;
+position: absolute;
 font-size: 2vw;
-margin-top: 120px;
+margin-top: 320px;
 margin-left: 76.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
-}
-
-.Childhead h1{
-  margin-top: 85px;
-  font-size: 5vw;
-  width: 24.7%;
-  margin-left: 38vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.Childhead h3{
-  margin-left: 38vw;
-  font-size: 1.5vw;
-  width: 25%;
 }
 
 .Parentbannerbot{
@@ -1841,18 +1863,6 @@ border-radius: 10px;
   width: 5vw;
   margin-top: -31px;
 }
-.Parentbanner .Childbanner{
-  height: 20px;
-  width: 70%;
-  z-index: 100;
-  justify-content: center;
-  margin-left: 3vw;
-  font-size: 1.5vw;
-  display: none;
-  font-weight: 600;
-  margin-top: 550px;
-}
-
 .posters .bigbanner{
   width: 95vw;
   margin-top: 8px;
@@ -1923,9 +1933,10 @@ margin-top: 1px;
 .Childhead{
   width: 100%;
   height: 41%;
+  margin-top: 80px;
 }
 .Childhead p{
-  margin-top: -67.5px;
+  margin-top: 300.5px;
   font-size: 35px;
   height: 82px;
   width: 100%;
@@ -1937,24 +1948,13 @@ margin-top: 1px;
 .Childhead button{
 color: red;
 font-size: 2vw;
-margin-top: 100px;
+position: absolute;
+margin-top: 315px;
 margin-left: 78vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
-.Childhead h1{
-  margin-top: 85px;
-  font-size: 5vw;
-  width: 24.8vw;
-  margin-left: 37vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.Childhead h3{
-  font-size: 1.5vw;
-  width: 25vw;
-  margin-left: 37vw;
-}
 
 .Childnews{
   width: 100%;
@@ -2148,18 +2148,6 @@ border-radius: 10px;
   margin-top: -31px;
 }
 
-.Parentbanner .Childbanner{
-  height: 20px;
-  width: 70%;
-  z-index: 100;
-  justify-content: center;
-  margin-left: 4.5vw;
-  display: none;
-  font-size: 1.5vw;
-  font-weight: 600;
-  margin-top: 550px;
-}
-
 .posters .bigbanner{
   width: 95vw;
   margin-left: 1.8vw;
@@ -2230,13 +2218,13 @@ margin-top: 1px;
 .Childhead{
   width: 100%;
   height: 41%;
+  margin-top: 100px;
 }
 .Childhead p{
-  margin-top: -67.5px;
-  font-size: 35px;
+  margin-top: 400px;
   height: 82px;
   width: 100%;
-  padding-top: 12px;
+  padding-top: 0px;
   padding-left:50px ;
   font-weight: 560;
 
@@ -2244,25 +2232,14 @@ margin-top: 1px;
 
 .Childhead button{
 color: red;
+position: absolute;
 font-size: 2vw;
-margin-top: 100px;
+margin-top: 410px;
 margin-left: 78vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
-.Childhead h1{
-  margin-top: 85px;
-  font-size: 5vw;
-  width: 24.8vw;
-  margin-left: 37vw;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.Childhead h3{
-  font-size: 1.5vw;
-  width: 25vw;
-  margin-left: 37vw;
-}
 
 .Parentbannerbot{
   display: flex;
