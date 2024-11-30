@@ -1,4 +1,3 @@
-import Image from "next/image"
 export default function Heading(){
     return(
         <div className="Parenthead">
