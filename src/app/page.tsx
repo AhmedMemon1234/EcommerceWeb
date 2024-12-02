@@ -9,6 +9,7 @@ import Categories from "./categories/page"
 export default function Home(){
   return(
     <div>
+
      <Banner/>
      <Bannersmall/>
      <Heading/>

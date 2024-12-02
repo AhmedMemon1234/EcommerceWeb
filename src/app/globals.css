@@ -6,23 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.ParentHeader{
-  background-color: black;
-  display: flex;
-  width: 100%;
-  height: 16vh;
-  position: relative;
-  justify-content: center;
-}
-.ChildHeader{
-  background-color: red;
-  height: 4.5vh;
-  width: 100vw;
-  padding-left: 30vw;
-  font-weight: 650;
-  animation: 3s flick infinite;
-  text-transform: uppercase;
-}
 @keyframes flick{
   0%{
     color: gold;
@@ -44,73 +27,6 @@
     color: #8a2be2;
   }
 }
-.ChildHeader span{
-  color: #007bff; 
-  text-shadow: 
-    0 0 5px #007bff, 
-    0 0 5px #007bff;
-  -webkit-text-stroke: 0.5px white;
-}
-
-.Headercontent input{
-  background-color: white;
-  width: 36vw;
-  color: black;
-  padding-left: 2vw;
-  height: 7vh;
-  position: absolute;
-  margin-top: 6.5vh;
-  margin-left: -70vw;
-}
-.Headercontent .searchicon{
-  color: black;
-  background-color: orangered;
-  width: 5vw;
-  height: 7vh;
-  margin-top: 6.5vh;
-  margin-left: -34vw;
-}
-
-.Headercontent h1{
-  color: orangered;
-  margin-top: -9.7vh;
-  font-size: 4vw;
-  height: 100px;
-  width: 20vw;
-  position: absolute;
-  height: 13vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: -95vw;
-}
-.Headercontent span{
-   font-size: 1vw;
-   font-family: monospace;
-}
-.Headercontent .carticon{
-  margin-left: -20vw;
-  font-size: 3vw;
-  margin-top: -10vh;
-  position: absolute;
-  color: white;
-}
-
-.Headercontent .mailicon{
-  margin-left: -15vw;
-  font-size: 3vw;
-  margin-top: -6vh;
-  position: absolute;
-  color: red;
-}
-
-.Headercontent .whatsappicon{
-  margin-left: -10vw;
-  font-size: 3vw;
-  position: absolute;
-  margin-top: -6.8vh;
-  color: greenyellow;
-}
-
-
 .Parentbanner{
   display: flex;
   width: 100%;
@@ -385,47 +301,6 @@ transition: 1s ease;
 }
 
 
-.Parentbannerbot{
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to top, #000000, #323232);
-  justify-content: center;
-}
-.Childbannerbot{
-  overflow: hidden;
-  width:100%;
-  height:240px;
-  justify-items: center;
-  transition: 0.3s ease;
-}
-
-.Childbannerbot p{
-  font-size: 16px;
-  color: white;
-  margin-top: 55px;
-}
-
-.Childbannerbot h1{
-font-size: 3vw;
-color: white;
-}
-.Childbannerbot span{
-  color: orangered;
-}
-.Childbannerbot button{
-  background-color: rgb(0, 99, 45);
-  padding: 7px;
-  margin-top: 10px;
-  color: white;
-  font-size: 1.2vw;
-  transition: 0.3s ease;
-}
-.Childbannerbot button:hover{
-  transform: rotate(360deg);
-}
 
 
 .Parentcategories{
@@ -492,14 +367,6 @@ transition: transform 0.3s ease-in-out;
   margin-left: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.Parentfooter{
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin-top: 100px;
-  justify-content: center;
-}
 .Childnews{
   width: 100%;
   height: 100%;
@@ -510,43 +377,6 @@ transition: transform 0.3s ease-in-out;
   filter: blur(2px);
   z-index: 1;
 }
-.Footer{
-  background-color: black;
-  height: 30vh;
-  position: absolute;
-  width: 100%;
-  margin-top: -162px;
-  justify-content: center;
-  z-index: 2;
-}
-.Footer .facebookicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: 5vh;
-  margin-left: 39.5vw;
-}
-
-.Footer .linkedinicon{
-  color: green;
-  font-size: 55px;
-  margin-top: -8.9vh;
-  margin-left: 45.5vw;
-}
-
-.Footer .whatsappicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: -8.9vh;
-  margin-left: 51.5vw;
-}
-
-.Footer .githubicon{
-  color: green;
-  font-size: 50px;
-  margin-top: -8.3vh;
-  margin-left: 57.5vw;
-}
-
 .newscontent{
   position: absolute;
   margin-top: 5vh;
@@ -575,38 +405,6 @@ border-radius: 10px;
   padding: 6px;
   margin-left: -30px;
   background-color: red;
-}
-.Footer ul{
-  color:  white;
-  display: flex;
-  margin-top: 3vh;
-  margin-left:34px;
-  gap: 15px;
-  font-weight: 600;
-}
-.Footer h3{
-  color: white;
-  margin-top: 5.3vh;
-  width: 100%;
-  padding-left: 37vw;
-  height: 24px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
-}
-
-.Footer h4{
-  color: white;
-  width: 100%;
-  font-size: 12px;
-  padding-left: 44.2vw;
-  height: 24px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
-}
-.Footer h3 span{
-  color: red;
 }
 .Childbanner .icon{
   display: inline;
@@ -720,98 +518,255 @@ font-family: sans-serif;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .Childhead{
-  margin-top: 55px;
+  margin-top: 40px;
   width: 100%;
-  background-image: url("/sale.jpg");
-  background-size: 100% 80%;
+  background-size: 100% 100%;
   height: 300px;
-  animation: Changeimage 15s linear infinite;
 }
-@keyframes Changeimage{
-  0%{
-    background-image: url("/sale.jpg");
-  }
-  20%{
-    background-image: url("/sale2.jpg");
-  }
-  40%{
-    background-image: url("/sale3.jpg");
-  }
-  60%{
-    background-image: url("/sale4.jpg");
-  }
-  80%{
-    background-image: url("/sale5.jpg");
-  }
-  100%{
-    background-image: url("/sale6.jpg");
-  }
+
+.Childhead .popular{
+  margin-top: 0px;
+  width: 50%;
+  justify-self: center;
+  background-size: 100% 100%;
+  height: 300px;
 }
-@media (max-width:480px){
-  .ChildHeader h1{
-    font-size: 2vw;
-    margin-left: -16vw;
-    margin-top: 0.5vh;
+.ShopbigParent{
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ShopbigChild{
+  height: 100%;
+  width: 100%;
+}
+.ShopbigChild .shopimg1{
+  justify-self: center;
+}
+
+.imgChild{
+  width: 170px;
+  overflow: hidden;
+  margin: 15px;
+  border: 1px solid black;
+  transition: 0.5s ease;
   }
-  .Headercontent h1{
-    font-size: 35px;
-    width: 30vw;
-    margin-left: -93.5vw;
-    margin-top: -43px;
-    height: 100px;
+  .imgChild:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  .imgChild .imgproduct{
+    width: 100%;
+    height: 130px;
+    cursor: context-menu;
   }
-  .Headercontent span{
-    font-size: 1.2vw;
-    height: 50px;
-    width: 10px;
-    margin-left: -3vw;    
+  .imgChildcontent{
+    cursor: context-menu;
   }
-  .ChildHeader{
-    height: 20px;
-  }
-  .ParentHeader{
-    height: 82px;
+  .imgChildcontent p{
+    font-size: 15px;
+    margin-bottom: 2px;
   }
   
-.Headercontent input{
-  background-color: white;
-  width: 36vw;
-  color: black;
-  padding-left: 2vw;
-  height: 35px;
-  font-size: 8px;
+  .imgChildcontent .btnadd{
+    display: inline-block;
+    background: linear-gradient(45deg, #FFD700, #FFCC00);
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size:13px;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 51.2px;
+    transition: 1s ease;
+  }
+  .imgChildcontent .btnadd:hover{
+    transform:scale(1.2);
+  }
+  
+  .imgChildcontent h1{
+    font-size: 20px;
+    padding-top: 5px;
+    color: rgb(255, 102, 0);
+  }
+  
+  .imgChildcontent h3{
+    font-size: 15px;
+    color:black;
+  }
+  
+  .imgChildcontent .star{
+    margin-top: -34px;
+  }  
+  .imgChildcontent h4{
+    font-size: 15px;
+    color:gray;
+    margin-top: -65px;
+    margin-left: 80px;
+  }
+
+
+.ParentBan{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.Childban{
+  width: 100%;
+  height: 100%;
+}
+.Childban .banimg{
+  width: 100vw;
+  height: 90vh;
+  filter: blur(5px) contrast(130%);
+}
+.Childban .head1{
   position: absolute;
-  margin-top: 33px;
-  margin-left: -70vw;
+  margin-top: 17vh;
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
+  z-index: 10;
+}
+.Childban .button1{
+  position: absolute;
+  margin-top: 51vh;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
+  z-index: 10;
 }
 
-.Headercontent .searchicon{
-  color: black;
-  background-color: orangered;
-  width: 5vw;
-  height: 35px;
-  margin-top: 33px;
-  margin-left: -34vw;
-}
-.Headercontent .carticon{
-  margin-left: -25vw;
-  font-size: 4vw;
-  margin-top: -25px;
+.Childban .paragraph1{
+  position: absolute;
+  margin-top: 38vh;
+  width:40%;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
+  z-index: 10;
 }
 
-.Headercontent .mailicon{
-  margin-left: -20vw;
-  font-size: 5vw;
-  margin-top: -27px;
+.Childban .rs{
+  position: absolute;
+  margin-top: 65vh;
+  width:15%;
+  height: 107px;
+  margin-left: 2vw;
+  border: 2px solid white;
+  background-color: black;
+  z-index: 10;
+}
+.Childban .rs:hover, .rs1:hover, .rs2:hover{
+   transition: 1s ease;
+   transform: translateY(-10px);
 }
 
-.Headercontent .whatsappicon{
-  margin-left: -14.5vw;
-  font-size: 5vw;
-  margin-top: -27px;
+.Childban .rs1{
+  position: absolute;
+  margin-top: 65vh;
+  width:15%;
+  height: 107px;
+  margin-left: 20vw;
+  border: 2px solid white;
+  background-color: black;
+  z-index: 10;
 }
 
+.Childban .rs2{
+  position: absolute;
+  margin-top: 65vh;
+  width:15%;
+  height: 107px;
+  margin-left: 38vw;
+  border: 2px solid white;
+  background-color: black;
+  z-index: 10;
+}
 
+.Childban .watches{
+  position: absolute;
+  margin-top: 10vh;
+  width:55%;
+  height: 400px;
+  margin-left: 43vw;
+  z-index: 10;
+}
+
+.Childban span{
+  color: red;
+}
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slidetrack{
+  display: flex;
+  width: calc(500px * 10);
+  animation: scroll 20s linear infinite;
+}
+.slidetrack:hover{
+  animation-play-state: paused;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide1{
+height: 200px;
+width: 250px;
+display: flex;
+align-items: center;
+padding: 15px;
+perspective: 100px;
+}
+.slide1 .imgscroll{
+  width: 100%;
+  transition: transform 1s;
+}
+
+.slide1 .imgscroll:hover{
+  transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after{
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+@media (max-width:480px){
+ 
 
 .posters .bigbanner{
   width:95%;
@@ -892,7 +847,7 @@ margin-top: 1px;
 }
 
 .Childhead p{
-  margin-top: 250px;
+  margin-top: 10px;
   font-size: 20px;
   height: 52px;
   width: 100%;
@@ -901,6 +856,13 @@ margin-top: 1px;
   font-weight: 560;
 }
 
+.Childhead .popular{
+  margin-top: 0px;
+  width: 50%;
+  justify-self: center;
+  background-size: 100% 100%;
+  height: 200px;
+}
 .Childhead button{
 color: red;
 font-size: 3vw;
@@ -908,50 +870,12 @@ margin-right: 13px;
 height: 40px;
 width: 30%;
 float: right;
-margin-top: 255px;
+margin-top: 15px;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
 
-
-.Parentbannerbot{
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to top, #000000, #323232);
-  justify-content: center;
-}
-.Childbannerbot{
-  width:100%;
-  height:180px;
-  justify-items: center;
-  transition: 0.3s ease;
-}
-
-.Childbannerbot p{
-  font-size: 15px;
-  color: white;
-  margin-top: 55px;
-}
-
-.Childbannerbot h1{
-font-size: 15px;
-color: white;
-}
-.Childbannerbot span{
-  color: orangered;
-}
-.Childbannerbot button{
-  background-color: rgb(0, 99, 45);
-  padding: 7px;
-  margin-top: 10px;
-  color: white;
-  font-size: 10px;
-  transition: 0.3s ease;
-}
 
 .tophead h1{
   font-size: 20px;
@@ -1000,88 +924,6 @@ border-radius: 10px;
   padding: 6px;
   margin-left: -63px;
   background-color: red;
-}
-
-.Parentfooter{
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin-top: 100px;
-  justify-content: center;
-}
-.Footer{
-  background-color: black;
-  height: 150px;
-  position: absolute;
-  width: 100%;
-  margin-top: -162px;
-  justify-content: center;
-  z-index: 2;
-}
-.Footer .facebookicon1{
-  color: green;
-  font-size: 30px;
-  margin-top: 30px;
-  margin-left: 21.5vw;
-}
-
-.Footer .linkedinicon{
-  color: green;
-  font-size: 35px;
-  margin-top: -33px;
-  margin-left: 34.5vw;
-}
-
-.Footer .whatsappicon1{
-  color: green;
-  font-size: 30px;
-  margin-top: -33px;
-  margin-left: 50vw;
-}
-
-.Footer .githubicon{
-  color: green;
-  font-size: 30px;
-  margin-top: -31px;
-  margin-left: 65vw;
-}
-
-.Footer ul{
-  color:  white;
-  display: flex;
-  margin-top: 30px;
-  margin-left:17vw;
-  gap: 3.5vw;
-  font-size: 2vw;
-  font-weight: 600;
-}
-.Footer h3{
-  color: white;
-  margin-top: 28px;
-  width: 100%;
-  padding-left: 12vw;
-  height: 30px;
-  padding-top: 10px;
-  font-size: 3vw;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
-}
-
-.Footer h4{
-  color: white;
-  width: 100%;
-  font-size: 2vw;
-  padding-left: 35vw;
-  height: 29px;
-  padding-top: 5px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
-}
-.Footer h3 span{
-  color: red;
 }
 
 .Parentitems{
@@ -1144,73 +986,138 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   text-decoration: line-through;
   color:  gray;
 }
+.Childban .banimg{
+  width: 100vw;
+  height:900px;
+}
+.Childban .head1{
+  position: absolute;
+  line-height: 90%;
+  margin-top: 50px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Childban .button1{
+  position: absolute;
+  margin-top: 350px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
+}
+
+.Childban .paragraph1{
+  position: absolute;
+  margin-top: 130px;
+  width:200px;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
+}
+
+.Childban .rs{
+  position: absolute;
+  margin-top: 630px;
+  width:30%;
+  height: 107px;
+  margin-left: 3vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs1{
+  position: absolute;
+  margin-top: 710px;
+  width:30%;
+  height: 107px;
+  margin-left: 34vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs2{
+  position: absolute;
+  margin-top: 790px;
+  width:30%;
+  height: 107px;
+  margin-left:65vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .watches{
+  position: absolute;
+  margin-top: 400px;
+  width:55%;
+  height: 300px;
+  margin-left: 25vw;
+}
+
+.imgChild{
+  width: 37vw;
+  overflow: hidden;
+  margin: 15px;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  }
+  .imgChild .imgproduct{
+    width: 100%;
+    height: 130px;
+    cursor: context-menu;
+  }
+  .imgChildcontent{
+    cursor: context-menu;
+  }
+  .imgChildcontent p{
+    font-size: 3.5vw;
+    margin-bottom: 2px;
+  }
+  
+  .imgChildcontent .btnadd{
+    display: inline-block;
+    background: linear-gradient(45deg, #FFD700, #FFCC00);
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size:2.3vw;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2px 12.4vw;
+    transition: 1s ease;
+  }
+  .imgChildcontent .btnadd:hover{
+    transform:scale(1.2);
+  }
+  
+  .imgChildcontent h1{
+    font-size: 4vw;
+    padding-top: 5px;
+    color: rgb(255, 102, 0);
+  }
+  
+  .imgChildcontent h3{
+    font-size: 3vw;
+    color:black;
+  }
+  
+  .imgChildcontent .star{
+    margin-top: -34px;
+  }  
+  .imgChildcontent h4{
+    font-size: 15px;
+    color:gray;
+    margin-top: -65px;
+    margin-left: 80px;
+  }
+
 
 }
 
 @media (min-width:481px) and (max-width:768px){
-  .ChildHeader h1{
-    font-size: 1.6vw;
-    margin-left: -9vw;
-    margin-top: 3px;
-  }
-  .Headercontent h1{
-    font-size: 40px;
-    width: 30vw;
-    margin-left: -95vw;
-    margin-top: -45px;
-  }
-  .Headercontent span{
-    font-size: 1.5vw;
-    margin-left: -1vw;    
-  }
-  .ChildHeader{
-    height: 25px;
-  }
-  .ParentHeader{
-    height: 82px;
-  }
-  
-.Headercontent input{
-  background-color: white;
-  width: 36vw;
-  color: black;
-  padding-left: 2vw;
-  height: 35px;
-  font-size: 2vw;
-  position: absolute;
-  margin-top: 36px;
-  margin-left: -70vw;
-}
-
-.Headercontent .searchicon{
-  color: black;
-  background-color: orangered;
-  width: 5vw;
-  height: 35px;
-  margin-top: 36px;
-  margin-left: -34vw;
-}
-.Headercontent .carticon{
-  margin-left: -25vw;
-  font-size: 20px;
-  width: 5vw;
-  margin-top: -27px;
-}
-
-.Headercontent .mailicon{
-  margin-left: -18.5vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
-
-.Headercontent .whatsappicon{
-  margin-left: -12vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
-
 
 .posters .bigbanner{
   width: 95vw;
@@ -1285,7 +1192,7 @@ margin-top: 1px;
 }
 
 .Childhead p{
-  margin-top: 300px;
+  margin-top: 0px;
   font-size: 20px;
   height: 52px;
   width: 100%;
@@ -1295,54 +1202,21 @@ margin-top: 1px;
 
 }
 
+.Childhead .popular{
+  margin-top: 5px;
+  width: 50%;
+  justify-self: center;
+  background-size: 100% 100%;
+  height: 200px;
+}
 .Childhead button{
 color: red;
 position: absolute;
 font-size: 2vw;
-margin-top: 306px;
+margin-top:8px;
 margin-left: 76.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
-}
-
-
-.Parentbannerbot{
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to top, #000000, #323232);
-  justify-content: center;
-}
-.Childbannerbot{
-  overflow: hidden;
-  width:100%;
-  height:200px;
-  justify-items: center;
-  transition: 0.3s ease;
-}
-
-.Childbannerbot p{
-  font-size: 15px;
-  color: white;
-  margin-top: 55px;
-}
-
-.Childbannerbot h1{
-font-size: 20px;
-color: white;
-}
-.Childbannerbot span{
-  color: orangered;
-}
-.Childbannerbot button{
-  background-color: rgb(0, 99, 45);
-  padding: 7px;
-  margin-top: 10px;
-  color: white;
-  font-size: 10px;
-  transition: 0.3s ease;
 }
 
 .tophead h1{
@@ -1393,152 +1267,78 @@ border-radius: 10px;
   margin-left: -63px;
   background-color: red;
 }
-
-.Parentfooter{
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin-top: 100px;
-  justify-content: center;
+.Childban .banimg{
+  width: 100vw;
+  height:900px;
 }
-.Footer{
-  background-color: black;
-  height: 150px;
+.Childban .head1{
   position: absolute;
-  width: 100%;
-  margin-top: -162px;
-  justify-content: center;
-  z-index: 2;
-}
-.Footer .facebookicon1{
-  color: green;
+  margin-top: 60px;
   font-size: 30px;
-  margin-top: 30px;
-  margin-left: 24.5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.Footer .linkedinicon{
-  color: green;
-  font-size: 35px;
-  margin-top: -33px;
-  margin-left: 37.5vw;
-}
-
-.Footer .whatsappicon1{
-  color: green;
-  font-size: 30px;
-  margin-top: -33px;
-  margin-left: 53vw;
-}
-
-.Footer .githubicon{
-  color: green;
-  font-size: 30px;
-  margin-top: -31px;
-  margin-left: 68vw;
-}
-
-.Footer ul{
-  color:  white;
-  display: flex;
-  margin-top: 30px;
-  margin-left:22vw;
-  gap: 2.1vw;
-  font-size: 2vw;
-  font-weight: 600;
-}
-.Footer h3{
+.Childban .button1{
+  position: absolute;
+  margin-top: 350px;
+  font-size: 15px;
   color: white;
-  margin-top: 20px;
-  width: 100%;
-  padding-left: 15vw;
-  height: 60px;
-  padding-top: 10px;
-  font-size: 3vw;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer h4{
-  color: white;
-  width: 100%;
-  font-size: 2vw;
-  padding-left: 37vw;
-  height: 29px;
-  margin-top: -5px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+.Childban .paragraph1{
+  position: absolute;
+  margin-top: 180px;
+  width:200px;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
-.Footer h3 span{
-  color: red;
+
+.Childban .rs{
+  position: absolute;
+  margin-top: 750px;
+  width:30%;
+  height: 107px;
+  margin-left: 2vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs1{
+  position: absolute;
+  margin-top: 750px;
+  width:30%;
+  height: 107px;
+  margin-left: 35vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs2{
+  position: absolute;
+  margin-top: 750px;
+  width:30%;
+  height: 107px;
+  margin-left:68vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .watches{
+  position: absolute;
+  margin-top: 400px;
+  width:55%;
+  height: 300px;
+  margin-left: 25vw;
 }
 }
 @media (min-width:769px) and (max-width:1024px){
-  .ChildHeader h1{
-    font-size: 1.6vw;
-    margin-left: -10vw;
-    margin-top: 5px;
-  }
-  .Headercontent h1{
-    font-size: 40px;
-    width: 30vw;
-    margin-left: -95vw;
-    margin-top: -45px;
-  }
-  .Headercontent span{
-    font-size: 1.5vw;
-    margin-left: -1vw;    
-  }
-  .ChildHeader{
-    height: 35px;
-  }
-  .ParentHeader{
-    height: 102px;
-  }
-  
-.Headercontent input{
-  background-color: white;
-  width: 36vw;
-  color: black;
-  padding-left: 2vw;
-  height: 35px;
-  font-size: 2vw;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: -70vw;
-}
-
-.Headercontent .searchicon{
-  color: black;
-  background-color: orangered;
-  width: 5vw;
-  height: 35px;
-  margin-top: 50px;
-  margin-left: -34vw;
-}
-.Headercontent .carticon{
-  margin-left: -25vw;
-  font-size: 20px;
-  width: 5vw;
-  margin-top: -27px;
-}
-
-.Headercontent .mailicon{
-  margin-left: -18.5vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
-
-.Headercontent .whatsappicon{
-  margin-left: -12vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
+ 
 .posters .bigbanner{
   width: 95vw;
   margin-top: 8px;
@@ -1612,7 +1412,7 @@ margin-top: 1px;
 }
 
 .Childhead p{
-  margin-top: 300.5px;
+  margin-top: 10.5px;
   font-size: 35px;
   height: 82px;
   width: 100%;
@@ -1622,54 +1422,24 @@ margin-top: 1px;
 
 }
 
+.Childhead .popular{
+  margin-top: 5px;
+  width: 50%;
+  justify-self: center;
+  background-size: 100% 100%;
+  height: 300px;
+}
+
 .Childhead button{
 color: red;
 position: absolute;
 font-size: 2vw;
-margin-top: 320px;
+margin-top: 31px;
 margin-left: 76.5vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
-.Parentbannerbot{
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to top, #000000, #323232);
-  justify-content: center;
-}
-.Childbannerbot{
-  overflow: hidden;
-  width:100%;
-  height:220px;
-  justify-items: center;
-  transition: 0.3s ease;
-}
-
-.Childbannerbot p{
-  font-size: 15px;
-  color: white;
-  margin-top: 55px;
-}
-
-.Childbannerbot h1{
-font-size: 30px;
-color: white;
-}
-.Childbannerbot span{
-  color: orangered;
-}
-.Childbannerbot button{
-  background-color: rgb(0, 99, 45);
-  padding: 7px;
-  margin-top: 10px;
-  color: white;
-  font-size: 10px;
-  transition: 0.3s ease;
-}
 .tophead h1{
   font-size: 30px;
 }
@@ -1716,153 +1486,80 @@ border-radius: 10px;
   margin-left: -63px;
   background-color: red;
 }
-
-.Parentfooter{
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin-top: 100px;
-  justify-content: center;
+.Childban .banimg{
+  width: 100vw;
+  height: 600px;
 }
-.Footer{
-  background-color: black;
-  height: 200px;
+.Childban .head1{
   position: absolute;
-  width: 100%;
-  margin-top: -162px;
-  justify-content: center;
-  z-index: 2;
-}
-.Footer .facebookicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: 28px;
-  margin-left: 27.5vw;
+  margin-top: 100px;
+  font-size: 30px;
+  width: 45%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer .linkedinicon{
-  color: green;
-  font-size: 55px;
-  margin-top: -50px;
-  margin-left: 40vw;
-}
-
-.Footer .whatsappicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: -50px;
-  margin-left: 53vw;
-}
-
-.Footer .githubicon{
-  color: green;
-  font-size: 50px;
-  margin-top: -50px;
-  margin-left: 68vw;
-}
-
-.Footer ul{
-  color:  white;
-  display: flex;
-  margin-top: 30px;
-  margin-left:22vw;
-  gap: 2.1vw;
-  font-size: 2vw;
-  font-weight: 600;
-}
-.Footer h3{
+.Childban .button1{
+  position: absolute;
+  margin-top:350px;
+  font-size: 15px;
   color: white;
-  margin-top: 20px;
-  width: 100%;
-  padding-left: 16vw;
-  height: 60px;
-  padding-top: 10px;
-  font-size: 3vw;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer h4{
-  color: white;
-  width: 100%;
-  font-size: 1.5vw;
-  padding-left: 40vw;
-  height: 55px;
-  padding-top: 10px;
-  margin-top: -5px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+.Childban .paragraph1{
+  position: absolute;
+  margin-top: 235px;
+  width:40%;
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
-.Footer h3 span{
-  color: red;
+
+.Childban .rs{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 2vw;
+  border: 2px solid white;
+  background-color: black;
 }
+
+.Childban .rs1{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 20vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs2{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 38vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .watches{
+  position: absolute;
+  margin-top: 10vh;
+  width:45%;
+  height: 350px;
+  margin-left: 51vw;
+}
+
 }
 @media (min-width:1025px) and (max-width:1440px){
-  .ChildHeader h1{
-    font-size: 1.6vw;
-    margin-left: -9vw;
-    margin-top: 8px;
-  }
-  .Headercontent h1{
-    font-size: 40px;
-    width: 30vw;
-    margin-left: -97vw;
-    margin-top: -45px;
-  }
-  .Headercontent span{
-    font-size: 1.5vw;
-    margin-left: 0vw;    
-  }
-  .ChildHeader{
-    height: 50px;
-  }
-  .ParentHeader{
-    height: 132px;
-  }
-  
-.Headercontent input{
-  background-color: white;
-  width: 42vw;
-  color: black;
-  padding-left: 2vw;
-  height: 35px;
-  font-size: 1.4vw;
-  position: absolute;
-  margin-top: 73px;
-  margin-left: -74vw;
-}
-
-.Headercontent .searchicon{
-  color: black;
-  background-color: orangered;
-  width: 5vw;
-  height: 35px;
-  margin-top: 73px;
-  margin-left: -32vw;
-}
-.Headercontent .carticon{
-  margin-left: -25vw;
-  font-size: 20px;
-  width: 5vw;
-  margin-top: -27px;
-}
-
-.Headercontent .mailicon{
-  margin-left: -18.5vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
-
-.Headercontent .whatsappicon{
-  margin-left: -12vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
 .posters .bigbanner{
   width: 95vw;
   margin-top: 8px;
@@ -1936,7 +1633,7 @@ margin-top: 1px;
   margin-top: 80px;
 }
 .Childhead p{
-  margin-top: 300.5px;
+  margin-top: 10px;
   font-size: 35px;
   height: 82px;
   width: 100%;
@@ -1949,7 +1646,7 @@ margin-top: 1px;
 color: red;
 font-size: 2vw;
 position: absolute;
-margin-top: 315px;
+margin-top: 23px;
 margin-left: 78vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
@@ -2001,153 +1698,80 @@ border-radius: 10px;
   background-color: red;
 }
 
-.Parentfooter{
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin-top: 100px;
-  justify-content: center;
+.Childban .banimg{
+  width: 100vw;
+  height: 600px;
 }
-.Footer{
-  background-color: black;
-  height: 200px;
+.Childban .head1{
   position: absolute;
-  width: 100%;
-  margin-top: -162px;
-  justify-content: center;
-  z-index: 2;
-}
-.Footer .facebookicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: 29px;
-  margin-left: 29vw;
+  margin-top: 100px;
+  font-size: 35px;
+  width: 45%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer .linkedinicon{
-  color: green;
-  font-size: 55px;
-  margin-top: -52px;
-  margin-left: 40.5vw;
-}
-
-.Footer .whatsappicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: -50px;
-  margin-left: 52.5vw;
-}
-
-.Footer .githubicon{
-  color: green;
-  font-size: 50px;
-  margin-top: -50px;
-  margin-left: 65vw;
-}
-
-.Footer ul{
-  color:  white;
-  display: flex;
-  margin-top: 30px;
-  margin-left:27.5vw;
-  gap: 2.1vw;
-  font-size: 1.5vw;
-  font-weight: 600;
-}
-.Footer h3{
+.Childban .button1{
+  position: absolute;
+  margin-top:350px;
+  font-size: 15px;
   color: white;
-  margin-top: 20px;
-  width: 100%;
-  padding-left: 20vw;
-  height: 60px;
-  padding-top: 10px;
-  font-size: 2.5vw;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer h4{
-  color: white;
-  width: 100%;
-  font-size: 1.3vw;
-  padding-left: 40vw;
-  height: 55px;
-  padding-top: 10px;
-  margin-top: -5px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+.Childban .paragraph1{
+  position: absolute;
+  margin-top: 235px;
+  width:40%;
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
-.Footer h3 span{
-  color: red;
+
+.Childban .rs{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 2vw;
+  border: 2px solid white;
+  background-color: black;
 }
+
+.Childban .rs1{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 20vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs2{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 38vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .watches{
+  position: absolute;
+  margin-top: 10vh;
+  width:45%;
+  height: 350px;
+  margin-left: 51vw;
+}
+
 }
 @media (min-width:1441px){
-  .ChildHeader h1{
-    font-size: 1.6vw;
-    margin-left: -9vw;
-    margin-top: 8px;
-  }
-  .Headercontent h1{
-    font-size: 40px;
-    width: 30vw;
-    margin-left: -97vw;
-    margin-top: -45px;
-  }
-  .Headercontent span{
-    font-size: 1.5vw;
-    margin-left: 0vw;    
-  }
-  .ChildHeader{
-    height: 50px;
-  }
-  .ParentHeader{
-    height: 132px;
-  }
-  
-.Headercontent input{
-  background-color: white;
-  width: 42vw;
-  color: black;
-  padding-left: 2vw;
-  height: 35px;
-  font-size: 1.4vw;
-  position: absolute;
-  margin-top: 73px;
-  margin-left: -74vw;
-}
-
-.Headercontent .searchicon{
-  color: black;
-  background-color: orangered;
-  width: 5vw;
-  height: 35px;
-  margin-top: 73px;
-  margin-left: -32vw;
-}
-.Headercontent .carticon{
-  margin-left: -25vw;
-  font-size: 20px;
-  width: 5vw;
-  margin-top: -27px;
-}
-
-.Headercontent .mailicon{
-  margin-left: -18.5vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
-
-.Headercontent .whatsappicon{
-  margin-left: -12vw;
-  font-size: 30px;
-  width: 5vw;
-  margin-top: -31px;
-}
-
 .posters .bigbanner{
   width: 95vw;
   margin-left: 1.8vw;
@@ -2221,7 +1845,7 @@ margin-top: 1px;
   margin-top: 100px;
 }
 .Childhead p{
-  margin-top: 400px;
+  margin-top: 10px;
   height: 82px;
   width: 100%;
   padding-top: 0px;
@@ -2230,55 +1854,24 @@ margin-top: 1px;
 
 }
 
+.Childhead .popular{
+  margin-top: 5px;
+  width: 50%;
+  justify-self: center;
+  background-size: 100% 100%;
+  height: 400px;
+}
+
 .Childhead button{
 color: red;
 position: absolute;
 font-size: 2vw;
-margin-top: 410px;
+margin-top: 20px;
 margin-left: 78vw;
 border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
-
-.Parentbannerbot{
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to top, #000000, #323232);
-  justify-content: center;
-}
-.Childbannerbot{
-  overflow: hidden;
-  width:100%;
-  height:260px;
-  justify-items: center;
-  transition: 0.3s ease;
-}
-
-.Childbannerbot p{
-  font-size: 20px;
-  color: white;
-  margin-top: 55px;
-}
-
-.Childbannerbot h1{
-font-size: 50px;
-color: white;
-}
-.Childbannerbot span{
-  color: orangered;
-}
-.Childbannerbot button{
-  background-color: rgb(0, 99, 45);
-  padding: 7px;
-  margin-top: 10px;
-  color: white;
-  font-size: 10px;
-  transition: 0.3s ease;
-}
 
 .Childnews{
   width: 100%;
@@ -2325,86 +1918,76 @@ border-radius: 10px;
   background-color: red;
 }
 
-.Parentfooter{
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin-top: 100px;
-  justify-content: center;
+.Childban .banimg{
+  width: 100vw;
+  height: 600px;
 }
-.Footer{
-  background-color: black;
-  height: 200px;
+.Childban .head1{
   position: absolute;
-  width: 100%;
-  margin-top: -162px;
-  justify-content: center;
-  z-index: 2;
-}
-.Footer .facebookicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: 28px;
-  margin-left: 29vw;
+  margin-top: 100px;
+  font-size: 35px;
+  width: 45%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer .linkedinicon{
-  color: green;
-  font-size: 55px;
-  margin-top: -50px;
-  margin-left: 40.5vw;
-}
-
-.Footer .whatsappicon1{
-  color: green;
-  font-size: 50px;
-  margin-top: -50px;
-  margin-left: 52.5vw;
-}
-
-.Footer .githubicon{
-  color: green;
-  font-size: 50px;
-  margin-top: -50px;
-  margin-left: 65vw;
-}
-
-.Footer ul{
-  color:  white;
-  display: flex;
-  margin-top: 30px;
-  margin-left:27.5vw;
-  gap: 2.1vw;
-  font-size: 1.5vw;
-  font-weight: 600;
-}
-.Footer h3{
+.Childban .button1{
+  position: absolute;
+  margin-top:350px;
+  font-size: 15px;
   color: white;
-  margin-top: 20px;
-  width: 100%;
-  padding-left: 20vw;
-  height: 60px;
-  padding-top: 10px;
-  font-size: 2.5vw;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
 
-.Footer h4{
-  color: white;
-  width: 100%;
-  font-size: 1.3vw;
-  padding-left: 40vw;
-  height: 55px;
-  padding-top: 10px;
-  margin-top: -5px;
-  justify-self: center;
-  font-weight: 600;
-  background-color: green;
+.Childban .paragraph1{
+  position: absolute;
+  margin-top: 235px;
+  width:40%;
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2vw;
 }
-.Footer h3 span{
-  color: red;
+
+.Childban .rs{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 2vw;
+  border: 2px solid white;
+  background-color: black;
 }
+
+.Childban .rs1{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 20vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .rs2{
+  position: absolute;
+  margin-top: 440px;
+  width:15%;
+  height: 107px;
+  margin-left: 38vw;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.Childban .watches{
+  position: absolute;
+  margin-top: 10vh;
+  width:45%;
+  height: 350px;
+  margin-left: 51vw;
+}
+
 }

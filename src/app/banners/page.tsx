@@ -8,7 +8,7 @@ import { IoMdContact } from "react-icons/io";
 export default function Banner() {
     return (
         <div className="Parentbanner">
-                <label>
+                <label id="#Hamburger">
                     <input type="checkbox" className="checkbox" />
                     <div className="toggle">
                         <span className="top_line common"></span>
@@ -19,8 +19,8 @@ export default function Banner() {
 <h1>MENU</h1>
 <ul className="Childbanner">
                 <li ><a href="#"><FaDesktop className="icon"/>Home</a></li>
-                <li ><a href="#"><FaUser className="icon"/>Sales</a></li>
-                <li ><a href="#"><GiClothes className="icon"/>Products</a></li>
+                <li ><a href="/All-Products"><FaUser className="icon"/>All Products</a></li>
+                <li ><a href="#"><GiClothes className="icon"/>Sales</a></li>
                 <li ><a href="#"><MdMedicalServices className="icon"/>Services</a></li>
                 <li ><a href="#"><IoManSharp className="icon"/>About Us</a></li>
                 <li ><a href="#"><IoMdContact className="icon"/>Contact Us</a></li>
