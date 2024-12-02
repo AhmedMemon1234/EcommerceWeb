@@ -8,7 +8,7 @@ export default function Bannerbottom(){
           <div className="text-center px-6">
             <h3 className="font-extrabold text-5xl text-red-600 leading-tight"><span className="text-gray-800">Winter</span> Sale</h3>
             <h6 className="text-2xl text-gray-800 mt-2">Limited Time Deal</h6>
-            <p className="text-gray-800 text-base leading-relaxed mt-4">Discover amazing discounts and deals. Don't miss out on our exclusive Winter offers for a limited time.</p>
+            <p className="text-gray-800 text-base leading-relaxed mt-4">Discover amazing discounts and deals. Dont miss out on our exclusive Winter offers for a limited time.</p>
   
             <button type="button" className="bg-gradient-to-r hover:bg-gradient-to-l from-orange-400 to-red-600 hover:bg-red-600 text-white tracking-wide font-semibold text-sm py-3 px-6 rounded-lg w-max mt-8">
               Explore More
