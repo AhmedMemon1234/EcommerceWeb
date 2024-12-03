@@ -544,16 +544,18 @@ font-family: sans-serif;
 .ShopbigChild{
   height: 100%;
   width: 100%;
+  justify-content: center;
 }
 .ShopbigChild .shopimg1{
   justify-self: center;
+  width: 40%;
 }
 
 .imgChild{
   width: 170px;
   overflow: hidden;
   margin: 15px;
-  border: 1px solid black;
+  border-radius: 10px;
   transition: 0.5s ease;
   }
   .imgChild:hover{
@@ -561,7 +563,7 @@ font-family: sans-serif;
     }
   .imgChild .imgproduct{
     width: 100%;
-    height: 130px;
+    height: 170px;
     cursor: context-menu;
   }
   .imgChildcontent{
@@ -610,6 +612,251 @@ font-family: sans-serif;
   }
 
 
+  .Parentwatch{
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Childwatch{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .Childwatch .watchhead{
+    justify-self: center;
+    width: 40%;
+  }
+  
+  .imgChild2{
+    width: 170px;
+    overflow: hidden;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    }
+    .imgChild2:hover{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    .imgChild2 .imgproduct2{
+      width: 100%;
+      height: 170px;
+      cursor: context-menu;
+    }
+    .imgChildcontent2{
+      cursor: context-menu;
+    }
+    .imgChildcontent2 p{
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+    
+    .imgChildcontent2 .btnadd2{
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #FFCC00);
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size:13px;
+      margin-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 5px 51.2px;
+      transition: 1s ease;
+    }
+    .imgChildcontent2 .btnadd2:hover{
+      transform:scale(1.2);
+    }
+    
+    .imgChildcontent2 h1{
+      font-size: 20px;
+      padding-top: 5px;
+      color: rgb(255, 102, 0);
+    }
+    
+    .imgChildcontent2 h3{
+      font-size: 15px;
+      color:black;
+    }
+    
+    .imgChildcontent2 .star2{
+      margin-top: -34px;
+    }  
+    .imgChildcontent2 h4{
+      font-size: 15px;
+      color:gray;
+      margin-top: -65px;
+      margin-left: 80px;
+    }
+  
+
+  .Parentmobile{
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Childmobile{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .Childmobile .mobilehead{
+    justify-self: center;
+  }
+  
+  .imgChild3{
+    width: 170px;
+    overflow: hidden;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    }
+    .imgChild3:hover{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    .imgChild3 .imgproduct3{
+      width: 100%;
+      height: 170px;
+      cursor: context-menu;
+    }
+    .imgChildcontent3{
+      cursor: context-menu;
+    }
+    .imgChildcontent3 p{
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+    
+    .imgChildcontent3 .btnadd3{
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #FFCC00);
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size:13px;
+      margin-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 5px 51.2px;
+      transition: 1s ease;
+    }
+    .imgChildcontent3 .btnadd3:hover{
+      transform:scale(1.2);
+    }
+    
+    .imgChildcontent3 h1{
+      font-size: 20px;
+      padding-top: 5px;
+      color: rgb(255, 102, 0);
+    }
+    
+    .imgChildcontent3 h3{
+      font-size: 15px;
+      color:black;
+    }
+    
+    .imgChildcontent3 .star3{
+      margin-top: -34px;
+    }  
+    .imgChildcontent3 h4{
+      font-size: 15px;
+      color:gray;
+      margin-top: -65px;
+      margin-left: 80px;
+    }
+  
+
+  .Parentheadphones{
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Childheadphones{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .Childheadphones .headphoneshead{
+    justify-self: center;
+    width: 40%;
+  }
+  
+  .imgChild4{
+    width: 170px;
+    overflow: hidden;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    }
+    .imgChild4:hover{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    .imgChild4 .imgproduct4{
+      width: 100%;
+      height: 170px;
+      cursor: context-menu;
+    }
+    .imgChildcontent4{
+      cursor: context-menu;
+    }
+    .imgChildcontent4 p{
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+    
+    .imgChildcontent4 .btnadd4{
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #FFCC00);
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size:13px;
+      margin-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 5px 51.2px;
+      transition: 1s ease;
+    }
+    .imgChildcontent4 .btnadd4:hover{
+      transform:scale(1.2);
+    }
+    
+    .imgChildcontent4 h1{
+      font-size: 20px;
+      padding-top: 5px;
+      color: rgb(255, 102, 0);
+    }
+    
+    .imgChildcontent4 h3{
+      font-size: 15px;
+      color:black;
+    }
+    
+    .imgChildcontent4 .star4{
+      margin-top: -34px;
+    }  
+    .imgChildcontent4 h4{
+      font-size: 15px;
+      color:gray;
+      margin-top: -65px;
+      margin-left: 80px;
+    }
+  
+  
 .ParentBan{
   width: 100%;
   height: 100%;
@@ -632,6 +879,7 @@ font-family: sans-serif;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 2vw;
   z-index: 10;
+  -webkit-text-stroke: red 1px;
 }
 .Childban .button1{
   position: absolute;
@@ -704,6 +952,7 @@ font-family: sans-serif;
 
 .Childban span{
   color: red;
+  -webkit-text-stroke: black 1px;
 }
 .slider{
   height: 250px;
@@ -764,6 +1013,42 @@ z-index: 2;
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+.Childhead .popular{
+justify-self: center;
+}
+
+.Childwatch .watchhead{
+  margin: -20px auto;
+}
+.Parentmobban{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 70px;
+}
+.Childmobban{
+  width: 100%;
+  height: 100%;
+}
+.Childmobban .MobileBan{
+  margin-left: 3%;
+}
+.Childmobban h1{
+  margin: 0 50vw;
+  margin-top: -90vh;
+  width: 45vw;
+  font-family: serif;
+  font-size: 6vw;
+}
+
+.Childmobban p{
+  margin: 0 50vw;
+  margin-top: -1vh;
+  width: 45vw;
+  font-family: sans-serif;
+  font-size: 1.4vw;
 }
 @media (max-width:480px){
  
@@ -857,9 +1142,10 @@ margin-top: 1px;
 }
 
 .Childhead .popular{
-  margin-top: 0px;
+  margin: 0 auto;
   width: 50%;
-  justify-self: center;
+  padding: 0;
+
   background-size: 100% 100%;
   height: 200px;
 }
@@ -1056,12 +1342,13 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   height: 300px;
   margin-left: 25vw;
 }
-
+.ShopbigChild .shopimg1{
+  width: 100%;
+}
 .imgChild{
   width: 37vw;
   overflow: hidden;
   margin: 15px;
-  border: 1px solid black;
   transition: 0.5s ease;
   }
   .imgChild .imgproduct{
@@ -1086,7 +1373,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     font-size:2.3vw;
     margin-top: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 2px 12.4vw;
+    padding: 2px 33.5%;
     transition: 1s ease;
   }
   .imgChildcontent .btnadd:hover{
@@ -1113,8 +1400,223 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     margin-top: -65px;
     margin-left: 80px;
   }
+.Parentwatch{
+  margin-top: -20px;
+}
+.Childwatch .watchhead{
+  width: 100%;
+}
+  .imgChild2{
+    width: 37vw;
+    overflow: hidden;
+    margin: 15px;
+    transition: 0.5s ease;
+    }
+    .imgChild2 .imgproduct2{
+      width: 100%;
+      height: 130px;
+      cursor: context-menu;
+    }
+    .imgChildcontent2{
+      cursor: context-menu;
+    }
+    .imgChildcontent2 p{
+      font-size: 3.5vw;
+      margin-bottom: 2px;
+    }
+    
+    .imgChildcontent2 .btnadd2{
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #FFCC00);
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size:2.3vw;
+      margin-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 2px 33.5%;
+      transition: 1s ease;
+    }
+    .imgChildcontent2 .btnadd2:hover{
+      transform:scale(1.2);
+    }
+    
+    .imgChildcontent2 h1{
+      font-size: 4vw;
+      padding-top: 5px;
+      color: rgb(255, 102, 0);
+    }
+    
+    .imgChildcontent2 h3{
+      font-size: 3vw;
+      color:black;
+    }
+    
+    .imgChildcontent2 .star2{
+      margin-top: -34px;
+    }  
+    .imgChildcontent2 h4{
+      font-size: 15px;
+      color:gray;
+      margin-top: -65px;
+      margin-left: 80px;
+    }
+  .Parentmobile{
+    margin-top: 40px;
+  }
+  .imgChild3{
+    width: 37vw;
+    overflow: hidden;
+    margin: 15px;
+    transition: 0.5s ease;
+    }
+    .imgChild3 .imgproduct3{
+      width: 100%;
+      height: 130px;
+      cursor: context-menu;
+    }
+    .imgChildcontent3{
+      cursor: context-menu;
+    }
+    .imgChildcontent3 p{
+      font-size: 3.5vw;
+      margin-bottom: 2px;
+    }
+    
+    .imgChildcontent3 .btnadd3{
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #FFCC00);
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size:2.3vw;
+      margin-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 2px 33.5%;
+      transition: 1s ease;
+    }
+    .imgChildcontent3 .btnadd3:hover{
+      transform:scale(1.2);
+    }
+    
+    .imgChildcontent3 h1{
+      font-size: 4vw;
+      padding-top: 5px;
+      color: rgb(255, 102, 0);
+    }
+    
+    .imgChildcontent3 h3{
+      font-size: 3vw;
+      color:black;
+    }
+    
+    .imgChildcontent3 .star3{
+      margin-top: -34px;
+    }  
+    .imgChildcontent3 h4{
+      font-size: 15px;
+      color:gray;
+      margin-top: -65px;
+      margin-left: 80px;
+    }
+  
+  .Parentheadphones{
+    margin-top: 40px;
+  }
+  .Parentheadphones .headphoneshead{
+    width: 100%;
+  }
+  .imgChild4{
+    width: 37vw;
+    overflow: hidden;
+    margin: 15px;
+    transition: 0.5s ease;
+    }
+    .imgChild4 .imgproduct4{
+      width: 100%;
+      height: 130px;
+      cursor: context-menu;
+    }
+    .imgChildcontent4{
+      cursor: context-menu;
+    }
+    .imgChildcontent4 p{
+      font-size: 3.5vw;
+      margin-bottom: 2px;
+    }
+    
+    .imgChildcontent4 .btnadd4{
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #FFCC00);
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size:2.3vw;
+      margin-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 2px 33.5%;
+      transition: 1s ease;
+    }
+    .imgChildcontent4 .btnadd4:hover{
+      transform:scale(1.2);
+    }
+    
+    .imgChildcontent4 h1{
+      font-size: 4vw;
+      padding-top: 5px;
+      color: rgb(255, 102, 0);
+    }
+    
+    .imgChildcontent4 h3{
+      font-size: 3vw;
+      color:black;
+    }
+    
+    .imgChildcontent4 .star4{
+      margin-top: -34px;
+    }  
+    .imgChildcontent4 h4{
+      font-size: 15px;
+      color:gray;
+      margin-top: -65px;
+      margin-left: 80px;
+    }
+  
+  
+.Parentmobban{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+.Childmobban{
+  width: 100%;
+  height: 100%;
+}
+.Childmobban .MobileBan{
+  margin-left: 0%;
+}
+.Childmobban h1{
+  margin: 0 auto;
+  margin-top: -0px;
+  width:103vw;
+  font-family: serif;
+  font-size: 14.1vw;
+}
 
+.Childmobban p{
+  margin-left: 5px;
 
+  margin-top: -1px;
+  width: 90vw;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.Parentmobile .mobilehead{
+  width: 100%;
+}
 }
 
 @media (min-width:481px) and (max-width:768px){
@@ -1270,6 +1772,8 @@ border-radius: 10px;
 .Childban .banimg{
   width: 100vw;
   height:900px;
+  margin: 0 auto;
+
 }
 .Childban .head1{
   position: absolute;
@@ -1335,6 +1839,49 @@ border-radius: 10px;
   width:55%;
   height: 300px;
   margin-left: 25vw;
+}
+
+.Parentmobban{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+.Childmobban{
+  width: 100%;
+  height: 100%;
+}
+.Childmobban .MobileBan{
+  margin-left: 0%;
+  width: 100%;
+}
+.Childmobban h1{
+  margin: 0 auto;
+  margin-top: -0px;
+  width:100vw;
+  font-family: serif;
+  font-size: 14.1vw;
+}
+
+.Childmobban p{
+  margin-left: 5px;
+  margin-top: -1px;
+  width: 90vw;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.Parentmobile .mobilehead{
+  width: 60%;
+}
+.ShopbigChild .shopimg1{
+  width: 80%;
+}
+.Parentwatch .watchhead{
+  width: 80%;
+}
+.Parentheadphones .headphoneshead{
+  width: 80%;
 }
 }
 @media (min-width:769px) and (max-width:1024px){
@@ -1489,6 +2036,8 @@ border-radius: 10px;
 .Childban .banimg{
   width: 100vw;
   height: 600px;
+  margin: 0 auto;
+
 }
 .Childban .head1{
   position: absolute;
@@ -1558,6 +2107,49 @@ border-radius: 10px;
   margin-left: 51vw;
 }
 
+.Parentmobban{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+}
+.Childmobban{
+  width: 100%;
+  height: 100%;
+}
+.Childmobban .MobileBan{
+  margin-left: 0%;
+  width: 100%;
+  height: 700px;
+}
+.Childmobban h1{
+  margin: 0 0;
+  margin-top: -0px;
+  width:88%;
+  font-family: serif;
+  font-size: 12.1vw;
+}
+
+.Childmobban p{
+  margin-left: 5px;
+  margin-top: -1px;
+  width: 90vw;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.Parentmobile .mobilehead{
+  width: 60%;
+}
+.ShopbigChild .shopimg1{
+  width: 80%;
+}
+.Parentwatch .watchhead{
+  width: 80%;
+}
+.Parentheadphones .headphoneshead{
+  width: 80%;
+}
 }
 @media (min-width:1025px) and (max-width:1440px){
 .posters .bigbanner{
@@ -1701,6 +2293,7 @@ border-radius: 10px;
 .Childban .banimg{
   width: 100vw;
   height: 600px;
+  margin: 0 auto;
 }
 .Childban .head1{
   position: absolute;
@@ -1770,6 +2363,18 @@ border-radius: 10px;
   margin-left: 51vw;
 }
 
+.Parentmobile .mobilehead{
+  width: 60%;
+}
+.ShopbigChild .shopimg1{
+  width: 80%;
+}
+.Parentwatch .watchhead{
+  width: 80%;
+}
+.Parentheadphones .headphoneshead{
+  width: 80%;
+}
 }
 @media (min-width:1441px){
 .posters .bigbanner{
@@ -1921,6 +2526,8 @@ border-radius: 10px;
 .Childban .banimg{
   width: 100vw;
   height: 600px;
+  margin: 0 auto;
+
 }
 .Childban .head1{
   position: absolute;
