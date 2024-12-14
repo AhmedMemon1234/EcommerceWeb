@@ -1,15 +1,17 @@
-"use client"
+'use client'
 import { useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
-  const handleChange = (e: any) => {
+  // Specify the event type for input change event
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: any) => {
+  // Specify the event type for form submit event
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const message = `New message from ${formData.name} (${formData.email}):\n\n${formData.message}`;
@@ -76,3 +78,4 @@ export default function Contact() {
     </div>
   );
 }
+g
