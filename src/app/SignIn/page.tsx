@@ -19,7 +19,7 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
     }
 
     // Simulate success
-    setSuccessMessage("Sign In Successful!");
+    setSuccessMessage("Sign In Successful");
     setError(""); // Reset error message
   };
 
@@ -110,7 +110,7 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
         {/* Don't have an account? Sign Up link */}
         <div className="mt-4 text-center">
           <span className="text-white">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
           <a href="/SignUp"><button
               onClick={onToggle}
               className="text-indigo-600 hover:underline"
