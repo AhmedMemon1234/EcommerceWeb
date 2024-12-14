@@ -1,4 +1,3 @@
-import { FaCartArrowDown } from "react-icons/fa";
 export default function Header(){
     return(
         <header className='shadow-lg font-[sans-serif] tracking-wide relative z-10'>
