@@ -1,4 +1,4 @@
-'use client';
+"use client"
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -23,19 +23,16 @@ const products = [
   { id: 9, name: 'Women 3', image: '/women1.jpg', price: '$35' },
   { id: 10, name: 'Shirt 1', image: '/shirt2.jpg', price: '$40' },
   { id: 11, name: 'Shirt 2', image: '/shirt1.jpg', price: '$42' },
-  { id: 12, name: 'Watch 3', image: '/watchpic5.jpg', price: '$50' },
-];
+  { id: 12, name: 'Watch 3', image: '/watchpic5.jpg', price: '$50' },];
 
 export default function Cartsec2() {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [selectedImage, setSelectedImage] = useState<string>('/women5.jpg');
-  const [showDescription, setShowDescription] = useState<boolean>(true);
   const [cartItems, setCartItems] = useState<Product[]>([]);
   const [showMessage, setShowMessage] = useState<boolean>(false);
   const [cartOpen, setCartOpen] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
-  const [orderPlaced, setOrderPlaced] = useState<boolean>(false);
   const [showOrderMessage, setShowOrderMessage] = useState<boolean>(false);
 
   // Form input states
@@ -48,22 +45,13 @@ export default function Cartsec2() {
 
   const handleSizeChange = (size: string) => setSelectedSize(size);
   const handleColorChange = (color: string) => setSelectedColor(color);
-  const handleTabChange = (tab: string) => setShowDescription(tab === 'Description');
   const handleImageClick = (image: string) => setSelectedImage(image);
 
   const handleAddToCart = (product: Product) => {
-    const updatedProduct = {
-      ...product,
-      size: selectedSize,
-      color: selectedColor,
-      image: selectedImage,
-    };
-
+    const updatedProduct = { ...product, size: selectedSize, color: selectedColor, image: selectedImage };
     setCartItems((prevCartItems) => [...prevCartItems, updatedProduct]);
-
     setSelectedSize('');
     setSelectedColor('');
-
     setShowMessage(true);
     setTimeout(() => setShowMessage(false), 3000);
   };
@@ -74,13 +62,8 @@ export default function Cartsec2() {
 
   const toggleCartSidebar = () => setCartOpen(!cartOpen);
 
-  // Form validation
   const handleFormChange = () => {
-    if (name && email && address && phone) {
-      setIsFormValid(true);
-    } else {
-      setIsFormValid(false);
-    }
+    setIsFormValid(!!(name && email && address && phone));
   };
 
   const handlePlaceOrder = () => {
@@ -88,16 +71,13 @@ export default function Cartsec2() {
       alert("Your cart is empty. Please add items to your cart before placing an order.");
       return;
     }
-
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setOrderPlaced(true);
       setShowOrderMessage(true);
       setTimeout(() => setShowOrderMessage(false), 3000);
     }, 2000);
   };
-
   return (
     <div className="font-sans">
       {/* Success Message */}

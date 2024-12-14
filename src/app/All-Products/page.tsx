@@ -9,7 +9,6 @@ import Customersays from "../Customer Says/page"
 import { FaDesktop, FaUser } from "react-icons/fa"
 import { GiClothes } from "react-icons/gi"
 import { MdMedicalServices } from "react-icons/md"
-import { IoManSharp } from "react-icons/io5"
 import { IoMdContact } from "react-icons/io"
 export default function Allproducts(){
     return(

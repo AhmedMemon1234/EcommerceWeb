@@ -30,12 +30,10 @@ export default function Cartsec2() {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [selectedImage, setSelectedImage] = useState<string>('/women6.jpg');
-  const [showDescription, setShowDescription] = useState<boolean>(true);
   const [cartItems, setCartItems] = useState<Product[]>([]);
   const [showMessage, setShowMessage] = useState<boolean>(false);
   const [cartOpen, setCartOpen] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
-  const [orderPlaced, setOrderPlaced] = useState<boolean>(false);
   const [showOrderMessage, setShowOrderMessage] = useState<boolean>(false);
 
   // Form input states
@@ -48,7 +46,6 @@ export default function Cartsec2() {
 
   const handleSizeChange = (size: string) => setSelectedSize(size);
   const handleColorChange = (color: string) => setSelectedColor(color);
-  const handleTabChange = (tab: string) => setShowDescription(tab === 'Description');
   const handleImageClick = (image: string) => setSelectedImage(image);
 
   const handleAddToCart = (product: Product) => {
@@ -92,7 +89,6 @@ export default function Cartsec2() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setOrderPlaced(true);
       setShowOrderMessage(true);
       setTimeout(() => setShowOrderMessage(false), 3000);
     }, 2000);
@@ -258,6 +254,7 @@ export default function Cartsec2() {
                 onChange={(e) => setPaymentMethod(e.target.value)}
                 className="w-full px-4 py-2 border rounded-lg mt-4"
               >
+
                 <option value="credit-card">Credit Card</option>
                 <option value="paypal">PayPal</option>
                 <option value="bank-transfer">Bank Transfer</option>

@@ -30,15 +30,12 @@ export default function Cartsec2() {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [selectedImage, setSelectedImage] = useState<string>('/man1.jpg');
-  const [showDescription, setShowDescription] = useState<boolean>(true);
   const [cartItems, setCartItems] = useState<Product[]>([]);
   const [showMessage, setShowMessage] = useState<boolean>(false);
   const [cartOpen, setCartOpen] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
-  const [orderPlaced, setOrderPlaced] = useState<boolean>(false);
   const [showOrderMessage, setShowOrderMessage] = useState<boolean>(false);
 
-  // Form input states
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [address, setAddress] = useState<string>('');
@@ -48,7 +45,6 @@ export default function Cartsec2() {
 
   const handleSizeChange = (size: string) => setSelectedSize(size);
   const handleColorChange = (color: string) => setSelectedColor(color);
-  const handleTabChange = (tab: string) => setShowDescription(tab === 'Description');
   const handleImageClick = (image: string) => setSelectedImage(image);
 
   const handleAddToCart = (product: Product) => {
@@ -63,18 +59,16 @@ export default function Cartsec2() {
 
     setSelectedSize('');
     setSelectedColor('');
-
     setShowMessage(true);
     setTimeout(() => setShowMessage(false), 3000);
   };
 
   const handleRemoveFromCart = (productId: number) => {
-    setCartItems((prevCartItems) => prevCartItems.filter(item => item.id !== productId));
+    setCartItems((prevCartItems) => prevCartItems.filter((item) => item.id !== productId));
   };
 
   const toggleCartSidebar = () => setCartOpen(!cartOpen);
 
-  // Form validation
   const handleFormChange = () => {
     if (name && email && address && phone) {
       setIsFormValid(true);
@@ -85,14 +79,13 @@ export default function Cartsec2() {
 
   const handlePlaceOrder = () => {
     if (cartItems.length === 0) {
-      alert("Your cart is empty. Please add items to your cart before placing an order.");
+      alert('Your cart is empty. Please add items to your cart before placing an order.');
       return;
     }
 
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setOrderPlaced(true);
       setShowOrderMessage(true);
       setTimeout(() => setShowOrderMessage(false), 3000);
     }, 2000);
@@ -100,15 +93,12 @@ export default function Cartsec2() {
 
   return (
     <div className="font-sans">
-      {/* Success Message */}
       {showMessage && (
         <div className="fixed top-0 left-0 right-0 bg-green-500 text-white text-center py-2 z-50">
           Successfully added to cart!
         </div>
       )}
-
       <div className="p-4 max-w-6xl mx-auto">
-        {/* Product Section */}
         <div className="grid items-start grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full lg:sticky top-0 flex gap-3 z-10">
             <Image
@@ -132,13 +122,9 @@ export default function Cartsec2() {
               ))}
             </div>
           </div>
-
-          {/* Product Details Section */}
           <div className="lg:pl-8">
             <h2 className="text-2xl font-bold text-gray-800">Smart Suit For Man Original | USA Stock </h2>
             <h3 className="text-4xl font-bold text-gray-800 mt-8">$1200</h3>
-
-            {/* Sizes Section */}
             <div className="mt-8">
               <h3 className="text-xl font-bold text-gray-800">Sizes</h3>
               <div className="flex flex-wrap gap-4 mt-4">
@@ -153,8 +139,6 @@ export default function Cartsec2() {
                 ))}
               </div>
             </div>
-
-            {/* Colors Section */}
             <div className="mt-8">
               <h3 className="text-xl font-bold text-gray-800">Colors</h3>
               <div className="flex flex-wrap gap-4 mt-4">
@@ -168,8 +152,6 @@ export default function Cartsec2() {
                 ))}
               </div>
             </div>
-
-            {/* Add to Cart Button */}
             <div className="mt-10 flex gap-4">
               <button
                 type="button"
