@@ -1,3 +1,4 @@
+"use client"
 import { NextApiRequest, NextApiResponse } from 'next';
 import twilio from 'twilio';
 
