@@ -39,7 +39,6 @@ export default function AboutUsHero() {
         </div>
       </section>
       <OurTeam/>
-      <Faqsec/>
       <CommentSection/>
       </>
     );
