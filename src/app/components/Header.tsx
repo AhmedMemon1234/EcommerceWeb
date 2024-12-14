@@ -1,7 +1,7 @@
 import { FaCartArrowDown } from "react-icons/fa";
 export default function Header(){
     return(
-        <header className='shadow-lg font-[sans-serif] tracking-wide relative z-50'>
+        <header className='shadow-lg font-[sans-serif] tracking-wide relative z-10'>
         <section
           className='md:flex lg:items-center relative py-3 lg:px-10 px-4 border-black border-b bg-black lg:min-h-[70px] max-lg:min-h-[60px]'>
           <a href="javascript:void(0)" className="max-sm:w-full max-sm:mb-3 shrink-0">
@@ -10,7 +10,7 @@ export default function Header(){
   
           <div className='flex flex-wrap w-full items-center'>
             <input type='text' placeholder='Search something...'
-              className='xl:w-80 max-lg:w-full lg:ml-10 max-md:mt-4 max-lg:ml-4 bg-gray-100 border focus:bg-transparent px-4 rounded h-10 outline-none text-sm transition-all' />
+              className='text-white xl:w-80 max-lg:w-full lg:ml-10 max-md:mt-4 max-lg:ml-4 bg-gray-100 border focus:bg-transparent px-4 rounded h-10 outline-none text-sm transition-all' />
             <div className="ml-auto max-lg:mt-4">
   
               <ul className='flex items-center'>
@@ -28,30 +28,30 @@ export default function Header(){
                         data-original="#000000" />
                     </g>
                   </svg>
-                  Donation For Palestine
-                </li>
+               <a href="/Contact">Contact Us</a>
+               </li>
                 <li className='max-sm:hidden flex items-center text-[15px] max-lg:py-2 px-4 font-medium text-white cursor-pointer'>
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2" viewBox="0 0 512 511">
                     <path
                       d="M497 193.3h-40.168c-1.215 0-2.418.052-3.613.13-9.024-8.051-19.004-14.7-29.68-19.82 24.348-17.294 40.262-45.712 40.262-77.778C463.8 43.266 421.035.5 368.469.5c-52.57 0-95.336 42.766-95.336 95.332 0 25.262 9.883 48.258 25.976 65.332h-70.148c16.094-17.074 25.973-40.07 25.973-65.332C254.934 43.266 212.168.5 159.602.5c-52.567 0-95.336 42.766-95.336 95.332 0 29.48 13.453 55.875 34.539 73.379-14.602 5.457-28.149 13.617-40.028 24.219a55.211 55.211 0 0 0-3.609-.13H15c-8.285 0-15 6.716-15 15v80.333c0 8.285 6.715 15 15 15h1.066v113.535c0 8.281 6.715 15 15 15h449.868c8.285 0 15-6.719 15-15V303.633H497c8.285 0 15-6.715 15-15V208.3c0-8.285-6.715-15-15-15zm-15 80.333h-25.168c-13.875 0-25.168-11.29-25.168-25.168 0-13.875 11.293-25.164 25.168-25.164H482zM303.133 95.832c0-36.023 29.308-65.332 65.332-65.332 36.023 0 65.336 29.309 65.336 65.332 0 36.027-29.309 65.332-65.332 65.332-36.028 0-65.336-29.305-65.336-65.332zM159.602 30.5c36.023 0 65.332 29.309 65.332 65.332 0 36.023-29.309 65.332-65.332 65.332-36.028 0-65.336-29.305-65.336-65.332 0-36.023 29.308-65.332 65.336-65.332zM30 223.3h25.168c13.875 0 25.168 11.29 25.168 25.169 0 13.875-11.293 25.164-25.168 25.164H30zm16.066 80.333h9.102c30.418 0 55.168-24.746 55.168-55.168 0-16.844-7.602-31.942-19.54-42.067h.356c15.504-9.918 33.535-15.23 52.383-15.23h142.887C258.664 214.566 241 249.574 241 288.633v113.535H110.332v-65.336c0-8.281-6.715-15-15-15-8.281 0-15 6.719-15 15v65.332H46.066zm419.868 98.531h-34.27v-65.332c0-8.281-6.715-15-15-15-8.281 0-15 6.719-15 15v65.332H271V288.633c0-53.742 43.723-97.465 97.469-97.465 18.933 0 37.039 5.36 52.582 15.36-11.852 10.128-19.383 25.163-19.383 41.94 0 30.419 24.746 55.165 55.168 55.165h9.098zm0 0"
                       data-original="#000000" />
                   </svg>
-                  Services
+                  <a href="/Services">Services We Provide</a>
                 </li>
                 <li className='max-lg:py-2 px-4 cursor-pointer'>
                   <span className="relative">
-                    <FaCartArrowDown className="w-6 h-6 inline text-white" viewBox="0 0 512 512"/>
                       <path
                         d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
                         data-original="#000000"></path>
-                    <span
-                      className="absolute left-auto -ml-1 -top-2 rounded-full bg-red-500 px-1 py-0 text-xs text-white">3</span>
-                  </span>
+                   </span>
                 </li>
                 <li className='flex text-[15px] max-lg:py-2 px-4 hover:text-[#007bff] hover:fill-[#007bff]'>
-                  <button
+               <a href="/SignUp"><button
                     className='px-4 py-2 text-sm font-semibold text-white border border-[#5a5a5a] bg-transparent'>Sign
-                    In</button>
+                    Up</button></a>
+               <a href="/SignIn"><button
+                    className='px-4 py-2 text-sm font-semibold text-white border border-[#5a5a5a] bg-transparent'>Sign
+                    In</button></a>
                 </li>
               </ul>
             </div>
@@ -75,25 +75,17 @@ export default function Header(){
             className='lg:flex lg:flex-wrap lg:items-center lg:justify-center px-10 py-3 bg-[#ff0b0b] min-h-[46px] gap-4 max-lg:space-y-4 max-lg:fixed max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-lg max-lg:overflow-auto z-50'>
             <li className='mb-6 hidden max-lg:block'>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='/'
               className='hover:text-yellow-300 text-yellow-300 text-[15px] font-medium block'>Home</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='/All-Products'
               className='hover:text-yellow-300 text-white text-[15px] font-medium block'>All Products</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Mobiles</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>50% OFF</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Mens</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Womens</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Watches</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Shoes</a></li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Donations</a></li>
-          </ul>
+            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='/Socialmedia'
+              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Social Media Items</a></li>
+            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='/Services'
+              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Services</a></li>
+            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='/Contact'
+              className='hover:text-yellow-300 text-white text-[15px] font-medium block'>Contact</a></li>
+        </ul>
         </div>
       </header>
     )

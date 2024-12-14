@@ -20,10 +20,9 @@ export default function Banner() {
 <ul className="Childbanner">
                 <li ><a href="#"><FaDesktop className="icon"/>Home</a></li>
                 <li ><a href="/All-Products"><FaUser className="icon"/>All Products</a></li>
-                <li ><a href="#"><GiClothes className="icon"/>Sales</a></li>
-                <li ><a href="#"><MdMedicalServices className="icon"/>Services</a></li>
-                <li ><a href="#"><IoManSharp className="icon"/>About Us</a></li>
-                <li ><a href="#"><IoMdContact className="icon"/>Contact Us</a></li>
+                <li ><a href="/Socialmedia"><GiClothes className="icon"/>Social Media Items</a></li>
+                <li ><a href="/Services"><MdMedicalServices className="icon"/>Services</a></li>
+                <li ><a href="/Contact"><IoMdContact className="icon"/>Contact Us</a></li>
             </ul>
             </div>
             </label>

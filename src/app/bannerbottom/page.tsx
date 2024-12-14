@@ -2,25 +2,17 @@ import Image from "next/image";
 
 export default function Bannerbottom(){
     return(
-        <div className="font-[sans-serif] bg-gray-200 relative w-auto mx-auto rounded overflow-hidden mt-4"
-        >
-        <div className="grid sm:grid-cols-2 items-center max-sm:gap-10 py-10 border-y-8 border-red-500">
-          <div className="text-center px-6">
-            <h3 className="font-extrabold text-5xl text-red-600 leading-tight"><span className="text-gray-800">Winter</span> Sale</h3>
-            <h6 className="text-2xl text-gray-800 mt-2">Limited Time Deal</h6>
-            <p className="text-gray-800 text-base leading-relaxed mt-4">Discover amazing discounts and deals. Dont miss out on our exclusive Winter offers for a limited time.</p>
-  
-            <button type="button" className="bg-gradient-to-r hover:bg-gradient-to-l from-orange-400 to-red-600 hover:bg-red-600 text-white tracking-wide font-semibold text-sm py-3 px-6 rounded-lg w-max mt-8">
-              Explore More
-            </button>
-          </div>
-  
-          <div className="bg-gradient-to-tr bg-red-600 rounded-tl-full rounded-bl-full w-full h-max">
-            <div className="p-2">
-              <Image src="/winter.jpg" className="h-64 w-64 rounded-full object-cover border-4 border-white" alt="img" width={256} height={256}/>
-            </div>
-          </div>
-        </div>
-      </div>
+<div className="bg-gradient-to-r from-red-600 to-black font-sans px-6 py-12">
+  <div className="container mx-auto flex flex-col justify-center items-center text-center">
+    <h2 className="text-white sm:text-4xl text-3xl font-bold mb-4">Discover Our New Collection</h2>
+    <p className="text-white text-base text-center mb-8">Elevate your style with our latest arrivals. Shop now and enjoy exclusive discounts!</p>
+
+    <button type="button" className="bg-white text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100">
+      Get Started
+    </button>
+  </div>
+</div>
+
+
     )
 }

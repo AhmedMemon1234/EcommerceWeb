@@ -3,7 +3,7 @@ export default function Mobilesec() {
     return (
         <div className="Parentmobile">
             <div className="Childmobile">
-                <Image src={"/mobs.png"} alt="Watch" width={300} height={100} className="mobilehead" />
+                <Image src={"/mobs.png"} alt="Watch" width={600} height={300} className="mobilehead" />
             </div>
             <div className="imgChild3">
                 <Image src={"/mob1.jpg"} alt="Shirt" width={300} height={100} className="imgproduct3" />

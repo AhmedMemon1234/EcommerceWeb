@@ -155,9 +155,7 @@
   justify-content: center;
   margin-top: 60px;
 }
-.Parentitems:hover > :not(.Childitem1:hover){
-  filter: blur(1px);
-}
+
 .Childitem1{
 width: 170px;
 overflow: hidden;
@@ -615,7 +613,7 @@ font-family: sans-serif;
   .Parentwatch{
     height: 100%;
     width: 100%;
-    margin-top: -10px;
+    margin-top: -80px;
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -1050,6 +1048,55 @@ justify-self: center;
   font-family: sans-serif;
   font-size: 1.4vw;
 }
+/* Add the custom scrollbar styling */
+.scrollbar::-webkit-scrollbar {
+  height: 8px; /* Sets the height of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar */
+  border-radius: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovered */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 8px;
+}
+
+.scrollbar {
+  overflow-x: scroll; /* Horizontal scrolling */
+  overflow-y: hidden; /* No vertical scrolling */
+  margin-top: 6px;
+  padding-bottom: 20px; /* Adjust the padding to fit content */
+  scroll-snap-type: x mandatory; /* Enable snapping to items */
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Add this CSS to your global stylesheet (globals.css) or component-specific CSS */
+.input-3d {
+  transition: transform 0.3s ease;
+}
+
+.input-3d:hover {
+  transform: translateZ(10px) rotateY(10deg);
+}
+
 @media (max-width:480px){
  
 
@@ -1296,6 +1343,21 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   margin-left: 2vw;
 }
 
+.popular{
+  margin: 0 auto;
+}
+.shopimg1{
+  margin: 0 auto;
+}
+.mobilehead{
+  margin: 0 auto;
+}
+.watchhead{
+  margin: 0 auto;
+}
+.headphoneshead{
+  margin: 0 auto;
+}
 .Childban .paragraph1{
   position: absolute;
   margin-top: 130px;
@@ -1370,10 +1432,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     color: black;
     text-decoration: none;
     border-radius: 4px;
-    font-size:2.3vw;
+    font-size:3vw;
     margin-top: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 2px 33.5%;
+    padding: 2px 29.5%;
     transition: 1s ease;
   }
   .imgChildcontent .btnadd:hover{
@@ -1431,10 +1493,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
       color: black;
       text-decoration: none;
       border-radius: 4px;
-      font-size:2.3vw;
+      font-size:3vw;
       margin-top: 5px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      padding: 2px 33.5%;
+      padding: 2px 29.5%;
       transition: 1s ease;
     }
     .imgChildcontent2 .btnadd2:hover{
@@ -1489,10 +1551,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
       color: black;
       text-decoration: none;
       border-radius: 4px;
-      font-size:2.3vw;
+      font-size:3vw;
       margin-top: 5px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      padding: 2px 33.5%;
+      padding: 2px 29.5%;
       transition: 1s ease;
     }
     .imgChildcontent3 .btnadd3:hover{
@@ -1521,7 +1583,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     }
   
   .Parentheadphones{
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .Parentheadphones .headphoneshead{
     width: 100%;
@@ -1551,10 +1613,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
       color: black;
       text-decoration: none;
       border-radius: 4px;
-      font-size:2.3vw;
+      font-size:3vw;
       margin-top: 5px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      padding: 2px 33.5%;
+      padding: 2px 29.5%;
       transition: 1s ease;
     }
     .imgChildcontent4 .btnadd4:hover{
@@ -1659,8 +1721,8 @@ margin-top: 1px;
 
 .Parentbanner2 .box2{
   height: 150px;
-  
 }
+
 .Parentbanner2 .box2 .box2img{
   height: 130px;
 }
@@ -1704,12 +1766,79 @@ margin-top: 1px;
 
 }
 
+.imgChildcontent .btnadd{
+  display: inline-block;
+  background: linear-gradient(45deg, #FFD700, #FFCC00);
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size:2vw;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2px 26%;
+  transition: 1s ease;
+}
+
+.imgChildcontent2 .btnadd2{
+  display: inline-block;
+  background: linear-gradient(45deg, #FFD700, #FFCC00);
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size:2vw;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2px 26%;
+  transition: 1s ease;
+}
+
+.imgChildcontent3 .btnadd3{
+  display: inline-block;
+  background: linear-gradient(45deg, #FFD700, #FFCC00);
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size:2vw;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2px 26%;
+  transition: 1s ease;
+}
+
+.imgChildcontent4 .btnadd4{
+  display: inline-block;
+  background: linear-gradient(45deg, #FFD700, #FFCC00);
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size:2vw;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2px 26%;
+  transition: 1s ease;
+}
 .Childhead .popular{
   margin-top: 5px;
   width: 50%;
   justify-self: center;
   background-size: 100% 100%;
   height: 200px;
+}
+
+.popular{
+  margin: 0 auto;
+}
+.shopimg1{
+  margin: 0 auto;
+}
+.mobilehead{
+  margin: 0 auto;
+}
+.watchhead{
+  margin: 0 auto;
+}
+.headphoneshead{
+  margin: 0 auto;
 }
 .Childhead button{
 color: red;
@@ -1958,6 +2087,21 @@ margin-top: 1px;
   margin-top: 70px;
 }
 
+.popular{
+  margin: 0 auto;
+}
+.shopimg1{
+  margin: 0 auto;
+}
+.mobilehead{
+  margin: 0 auto;
+}
+.watchhead{
+  margin: 0 auto;
+}
+.headphoneshead{
+  margin: 0 auto;
+}
 .Childhead p{
   margin-top: 10.5px;
   font-size: 35px;
@@ -2271,6 +2415,22 @@ padding: 5px 5px 5px 5px;
   font-size: 15px;
   margin-left: 55px;
 }
+
+.popular{
+  margin: 0 auto;
+}
+.shopimg1{
+  margin: 0 auto;
+}
+.mobilehead{
+  margin: 0 auto;
+}
+.watchhead{
+  margin: 0 auto;
+}
+.headphoneshead{
+  margin: 0 auto;
+}
 .newscontent input{
 margin-top: 55px;
 font-size: 10px;
@@ -2370,7 +2530,7 @@ border-radius: 10px;
   width: 80%;
 }
 .Parentwatch .watchhead{
-  width: 80%;
+  width: 70%;
 }
 .Parentheadphones .headphoneshead{
   width: 80%;
@@ -2477,6 +2637,21 @@ border: 2px solid orangered;
 padding: 5px 5px 5px 5px;
 }
 
+.popular{
+  margin: 0 auto;
+}
+.shopimg1{
+  margin: 0 auto;
+}
+.mobilehead{
+  margin: 0 auto;
+}
+.watchhead{
+  margin: 0 auto;
+}
+.headphoneshead{
+  margin: 0 auto;
+}
 
 .Childnews{
   width: 100%;

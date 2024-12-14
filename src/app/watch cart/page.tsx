@@ -127,10 +127,12 @@ export default function Watchcart() {
                     </div>
 
                     <div className="mt-8">
-                        <button className="w-full bg-gray-800 text-white py-3 rounded-md text-lg font-semibold">
-                            Buy Now
-                        </button>
-                        <button type="button" className="w-full px-4 mt-2 py-2.5 border border-gray-800 bg-transparent hover:bg-gray-50 text-gray-800 text-sm font-semibold rounded-md">Add to cart</button>
+                    <a href="/Watchcart1">
+  <button className="w-full bg-gray-800 text-white py-3 rounded-md text-lg font-semibold">
+    Buy Now
+  </button>
+</a>
+
                     </div>
 
                     <div className="mt-8">
