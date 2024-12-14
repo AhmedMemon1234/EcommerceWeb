@@ -1,4 +1,3 @@
-import Faqsec from "../Aboutfaq/page";
 import CommentSection from "../Comment/page";
 import OurTeam from "../Ourteam/page";
 
