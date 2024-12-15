@@ -1,14 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // For navigation between pages
 import { motion } from "framer-motion"; // For 3D animations
 
-const SignIn = ({ onToggle }: { onToggle: () => void }) => {
+const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
+  const router = useRouter(); // Router for navigation
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,7 +37,6 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
           transformStyle: "preserve-3d",
         }}
       >
-        {/* 3D Background Effect */}
         <motion.div
           className="absolute inset-0 bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-50 rounded-xl"
           animate={{
@@ -60,7 +62,6 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
         <h2 className="text-4xl text-center font-bold text-white mb-8">Sign In</h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Email */}
           <div className="relative">
             <input
               type="email"
@@ -71,7 +72,6 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
             />
           </div>
 
-          {/* Password */}
           <div className="relative">
             <div className="flex items-center">
               <input
@@ -96,7 +96,6 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
             <p className="text-green-500 text-center">{successMessage}</p>
           )}
 
-          {/* Submit Button */}
           <div className="mt-4">
             <button
               type="submit"
@@ -107,16 +106,15 @@ const SignIn = ({ onToggle }: { onToggle: () => void }) => {
           </div>
         </form>
 
-        {/* Don't have an account? Sign Up link */}
         <div className="mt-4 text-center">
           <span className="text-white">
-            Dont have an account?{" "}
-          <a href="/SignUp"><button
-              onClick={onToggle}
+            Don't have an account?{" "}
+            <button
+              onClick={() => router.push("/SignUp")}
               className="text-indigo-600 hover:underline"
             >
               Sign Up
-            </button></a>
+            </button>
           </span>
         </div>
       </motion.div>
