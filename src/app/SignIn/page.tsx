@@ -108,7 +108,7 @@ const SignIn = () => {
 
         <div className="mt-4 text-center">
           <span className="text-white">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <button
               onClick={() => router.push("/SignUp")}
               className="text-indigo-600 hover:underline"
