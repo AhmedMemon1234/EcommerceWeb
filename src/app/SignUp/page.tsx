@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // For navigation
 import { motion } from "framer-motion"; // For 3D animations
 
-const SignUp = ({ onToggle }: { onToggle: () => void }) => {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -11,6 +12,8 @@ const SignUp = ({ onToggle }: { onToggle: () => void }) => {
   const [successMessage, setSuccessMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+  const router = useRouter(); // Router for navigation
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -133,12 +136,12 @@ const SignUp = ({ onToggle }: { onToggle: () => void }) => {
         <div className="mt-4 text-center">
           <span className="text-white">
             Already have an account?{" "}
-          <a href="/SignIn"><button
-              onClick={onToggle}
+            <button
+              onClick={() => router.push("/SignIn")}
               className="text-indigo-600 hover:underline"
             >
               Sign In
-            </button></a>
+            </button>
           </span>
         </div>
       </motion.div>
