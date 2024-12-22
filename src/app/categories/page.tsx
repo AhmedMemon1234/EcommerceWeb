@@ -41,10 +41,10 @@ export default function Categories(){
     </div>
         </div>
                     <div className="Childcategories">
-            <Image src={"/shoes.jpg"} alt="Category6"width={100} height={50} className="image2"/>          
+            <Image src={"/download (3).jpg"} alt="Category6"width={100} height={50} className="image2"/>          
         
         <div className="Categorycontent">
-    <h2>Shoes</h2>
+    <h2>Headphones</h2>
     </div>
         </div>
                     <div className="Childcategories">
@@ -62,10 +62,10 @@ export default function Categories(){
     </div>
         </div>
                     <div className="Childcategories">
-            <Image src={"/led.jpg"} alt="Category9"width={100} height={50} className="image2"/>          
+            <Image src={"/service.png"} alt="Category9"width={100} height={50} className="image2"/>          
         
         <div className="Categorycontent">
-    <h2>L C D</h2>
+    <h2>Our Services</h2>
     </div>
         </div>
                     <div className="Childcategories">
@@ -76,17 +76,17 @@ export default function Categories(){
     </div>
         </div>
                     <div className="Childcategories">
-            <Image src={"/grocery.avif"} alt="Category11"width={100} height={50} className="image2"/>          
+            <Image src={"/contact2.png"} alt="Category11"width={100} height={50} className="image2"/>          
         
         <div className="Categorycontent">
-    <h2>Groceries</h2>
+    <h2>Contact Us</h2>
     </div>
         </div>
                     <div className="Childcategories">
-            <Image src={"/palestine.jpg"} alt="Category12"width={100} height={50} className="image2"/>          
+            <Image src={"/social1.png"} alt="Category12"width={100} height={50} className="image2"/>          
         
         <div className="Categorycontent">
-    <h2>Donation</h2>
+    <h2>Social Items</h2>
     </div>
         </div>
     </div>

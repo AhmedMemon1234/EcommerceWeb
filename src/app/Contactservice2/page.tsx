@@ -2,13 +2,13 @@ export default function Contactservice2() {
     return (
       <section className="relative bg-black py-16 px-4 sm:px-6 lg:px-8 mt-16">
         <div className="relative z-10 text-center text-white p-8 md:p-16 max-w-5xl mx-auto">
-          <h2 className="text-4xl font-extrabold mb-6 text-yellow-400">
+          <h2 className="text-4xl font-extrabold mb-6 text-red-600">
             Your Next-Level Experience Awaits
           </h2>
           <p className="text-lg mb-10 text-gray-300">
             We offer a range of dynamic, tailor-made solutions designed to elevate your business to new heights. Let’s push the boundaries.
           </p>
-          <div className="inline-block bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold cursor-pointer transform transition duration-300 hover:scale-110 hover:bg-yellow-600">
+          <div className="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold cursor-pointer transform transition duration-300 hover:scale-110 hover:bg-yellow-600">
             Start Now
           </div>
         </div>

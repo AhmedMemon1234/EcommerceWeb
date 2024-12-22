@@ -47,7 +47,7 @@ export default function OurServices() {
       <div className="text-center mt-6">
         <button
           onClick={toggleReadMore}
-          className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold transform transition duration-300 hover:scale-110"
+          className="bg-red-600 text-white px-8 py-3 rounded-full text-lg font-semibold transform transition duration-300 hover:scale-110"
         >
           {isReadMore ? "Hide" : "Read More"}
         </button>

@@ -29,7 +29,7 @@ export default function MyServices() {
             </div>
             </label>
       <section className="relative bg-white min-h-[110vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-gray-600 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-red-600 z-0" />
         <div className="relative z-10 text-center p-8 md:p-16 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold text-red-600 mb-4">
             Discover Our <span className="text-black">Exceptional Services</span>

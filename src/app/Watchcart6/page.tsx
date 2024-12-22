@@ -12,8 +12,8 @@ type Product = {
 };
 
 const products = [
-  { id: 1, name: 'Mobile', image: '/watchpic9.jpg', price: '$12' },
-  { id: 2, name: 'Watch 2', image: '/watch1.jpg', price: '$15' },
+  { id: 1, name: 'Watch', image: '/watchpic9.jpg', price: '$12' },
+  { id: 2, name: 'Mobile', image: '/oneplus9.jpg', price: '$15' },
   { id: 3, name: 'Toys', image: '/toys.jpg', price: '$20' },
   { id: 4, name: 'Toys 2', image: '/toy2.jpg', price: '$18' },
   { id: 5, name: 'Mobile', image: '/mobile.jpg', price: '$22' },

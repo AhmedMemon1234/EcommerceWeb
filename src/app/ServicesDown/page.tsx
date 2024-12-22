@@ -12,7 +12,7 @@ export default function ServicesDown() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* First Card */}
             <div className="relative overflow-hidden bg-white rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-              <div className="w-full h-48 bg-gradient-to-br from-gray-800 to-gray-600 rounded-t-xl transform rotate-45 mx-auto mt-10 z-0 relative">
+              <div className="w-full h-48 bg-gradient-to-r from-black to-red-600 rounded-t-xl transform rotate-45 mx-auto mt-10 z-0 relative">
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-semibold">
                   eCommerce Web Design
                 </span>
@@ -27,7 +27,7 @@ export default function ServicesDown() {
   
             {/* Second Card */}
             <div className="relative overflow-hidden bg-white rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-              <div className="w-full h-48 bg-gradient-to-br from-gray-700 to-gray-500 rounded-t-xl transform rotate-45 mx-auto mt-10 z-0 relative">
+              <div className="w-full h-48 bg-gradient-to-r from-black to-red-600 rounded-t-xl transform rotate-45 mx-auto mt-10 z-0 relative">
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-semibold">
                   Payment Integration
                 </span>
@@ -42,7 +42,7 @@ export default function ServicesDown() {
   
             {/* Third Card */}
             <div className="relative overflow-hidden bg-white rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-              <div className="w-full h-48 bg-gradient-to-br from-gray-600 to-gray-400 rounded-t-xl transform rotate-45 mx-auto mt-10 z-0 relative">
+              <div className="w-full h-48 bg-gradient-to-r from-black to-red-600 rounded-t-xl transform rotate-45 mx-auto mt-10 z-0 relative">
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-semibold">
                   Product Management
                 </span>
